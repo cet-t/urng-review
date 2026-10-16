@@ -1,0 +1,5 @@
+﻿randi64[0,2] threshold-boundary words tested=4 ok=true
+randi64[-5,7] threshold-boundary words tested=4 ok=true
+randi64[0,4611686018427400249] threshold-boundary words tested=0 ok=true
+randi64[-9223372036854775808,9223372036854775806] threshold-boundary words tested=4 ok=true
+randi64[-9223372036854775801,9223372036854775807] threshold-boundary words tested=4 ok=true

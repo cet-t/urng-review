@@ -1,0 +1,21 @@
+﻿randf edge: 160 cases, 0 outside [min,max)
+System.Management.Automation.RemoteException
+thread 'main' (30000) panicked at D:\.repo\urng-review\reviewers\opus\sol\harness\_src\src\rng.rs:138:1:
+invalid float range
+  randf(1,1) -> panic
+System.Management.Automation.RemoteException
+thread 'main' (30000) panicked at D:\.repo\urng-review\reviewers\opus\sol\harness\_src\src\rng.rs:138:1:
+invalid float range
+System.Management.Automation.RemoteException
+thread 'main' (30000) panicked at D:\.repo\urng-review\reviewers\opus\sol\harness\_src\src\rng.rs:138:1:
+invalid float range
+  randf(2,1) -> panic
+  randf(NaN,1) -> panic
+System.Management.Automation.RemoteException
+thread 'main' (30000) panicked at D:\.repo\urng-review\reviewers\opus\sol\harness\_src\src\rng.rs:138:1:
+invalid float range
+System.Management.Automation.RemoteException
+thread 'main' (30000) panicked at D:\.repo\urng-review\reviewers\opus\sol\harness\_src\src\rng.rs:138:1:
+empty integer range
+  randf(0,inf) -> panic
+  randi(5,4) -> panic

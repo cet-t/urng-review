@@ -1,0 +1,30 @@
+﻿Alias32 [0.0, 1.0]: freq=[0.0, 1.0] max|dev|=0.0000
+Bst32   [0.0, 1.0]: freq=[0.0, 1.0] max|dev|=0.0000
+Alias32 [1.0, 0.0]: freq=[1.0, 0.0] max|dev|=0.0000
+Bst32   [1.0, 0.0]: freq=[1.0, 0.0] max|dev|=0.0000
+Alias32 [0.0, 0.0, 1.0, 0.0]: freq=[0.0, 0.0, 1.0, 0.0] max|dev|=0.0000
+Bst32   [0.0, 0.0, 1.0, 0.0]: freq=[0.0, 0.0, 1.0, 0.0] max|dev|=0.0000
+Alias32 [1e-30, 0.0, 1.0]: freq=[0.0, 0.0, 1.0] max|dev|=0.0000
+Bst32   [1e-30, 0.0, 1.0]: freq=[0.0, 0.0, 1.0] max|dev|=0.0000
+Alias32 [3.4028235e38, 3.4028235e38]: freq=[0.4985, 0.5015] max|dev|=0.0015
+Bst32   [3.4028235e38, 3.4028235e38]: freq=[0.4993, 0.5007] max|dev|=0.0007
+Alias32 [3.4028235e38, 0.0, 3.4028235e38]: freq=[0.4999, 0.0, 0.5001] max|dev|=0.0001
+Bst32   [3.4028235e38, 0.0, 3.4028235e38]: freq=[0.4993, 0.0, 0.5007] max|dev|=0.0007
+Alias32 [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0]: freq=[0.0355, 0.0714, 0.1072, 0.1425, 0.1791, 0.2152, 0.249] max|dev|=0.0010
+Bst32   [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0]: freq=[0.036, 0.0715, 0.1072, 0.1419, 0.1786, 0.2148, 0.2499] max|dev|=0.0009
+Alias32 [0.1, 0.2, 0.3, 0.15, 0.25]: freq=[0.0999, 0.1997, 0.2991, 0.1517, 0.2497] max|dev|=0.0017
+Bst32   [0.1, 0.2, 0.3, 0.15, 0.25]: freq=[0.1004, 0.1993, 0.2999, 0.1505, 0.2499] max|dev|=0.0007
+Alias32 [3.0, 3.0, 3.0]: freq=[0.3334, 0.3333, 0.3333] max|dev|=0.0001
+Bst32   [3.0, 3.0, 3.0]: freq=[0.3332, 0.3335, 0.3333] max|dev|=0.0002
+Alias32 invalid []: panic
+Bst32   invalid []: panic
+Alias32 invalid [0.0, 0.0]: panic
+Bst32   invalid [0.0, 0.0]: panic
+Alias32 invalid [-1.0, 2.0]: panic
+Bst32   invalid [-1.0, 2.0]: panic
+Alias32 invalid [NaN, 1.0]: panic
+Bst32   invalid [NaN, 1.0]: panic
+Alias32 invalid [inf, 1.0]: panic
+Bst32   invalid [inf, 1.0]: panic
+Alias32 sweep: 0/300 weight vectors with max|dev|>0.01; worst 0.0029 for [973, 599]
+Alias64 sweep: 0/300 weight vectors with max|dev|>0.01; worst 0.0033 for [256, 155, 282]

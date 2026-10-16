@@ -1,0 +1,3 @@
+﻿wide::Threefry32x2x4::new(7): blocks [2^32, 2^32+1] == blocks [0, 1]: false (62.7 s)
+  first  = [[4d25fbcc, e4740477, e82f2530, 7a768873], [2f1114e0, c7a5e09f, 7734cf1f, 31cb649d], [17bbe5ca, d261d597, 32f46587, 913ebf75], [af126ad5, d8876a1f, 55b4bc02, fb9bc0cd]]
+  after  = [[a6cb318c, e55151fa, db6f2597, 16a32c2a], [d203f29b, 3854563d, faed5b43, 6ccb6c93], [bfef464a, f1ba3515, 775d5898, cc3bb653], [0a22b1c6, 8459b5d1, 9b88f10f, d5d08489]]

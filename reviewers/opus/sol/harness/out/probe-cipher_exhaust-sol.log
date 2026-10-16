@@ -1,0 +1,2 @@
+﻿ChaCha20 after the u32::MAX block: panic
+Salsa20 after the u64::MAX block: panic

@@ -1,0 +1,82 @@
+﻿# build matrix for D:\.repo\urng-review\reviewers\opus\sol\harness\_src  (2026-10-16T18:16:38)
+check --lib (no features)                                              exit=0 errors=0 warnings=0
+check --lib --features rand                                            exit=0 errors=0 warnings=0
+check --lib --features cabi                                            exit=0 errors=0 warnings=3
+check --lib --features rand,cabi                                       exit=0 errors=0 warnings=3
+check --lib --features wide                                            exit=0 errors=0 warnings=0
+check --lib --features rand,wide                                       exit=0 errors=0 warnings=0
+check --lib --features cabi,wide                                       exit=0 errors=0 warnings=3
+check --lib --features rand,cabi,wide                                  exit=0 errors=0 warnings=3
+check --lib --features simd                                            exit=0 errors=0 warnings=12
+check --lib --features rand,simd                                       exit=0 errors=0 warnings=12
+check --lib --features cabi,simd                                       exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,simd                                  exit=0 errors=0 warnings=12
+check --lib --features wide,simd                                       exit=0 errors=0 warnings=12
+check --lib --features rand,wide,simd                                  exit=0 errors=0 warnings=12
+check --lib --features cabi,wide,simd                                  exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,wide,simd                             exit=0 errors=0 warnings=12
+check --lib --features sampler                                         exit=0 errors=0 warnings=0
+check --lib --features rand,sampler                                    exit=0 errors=0 warnings=0
+check --lib --features cabi,sampler                                    exit=0 errors=0 warnings=3
+check --lib --features rand,cabi,sampler                               exit=0 errors=0 warnings=3
+check --lib --features wide,sampler                                    exit=0 errors=0 warnings=0
+check --lib --features rand,wide,sampler                               exit=0 errors=0 warnings=0
+check --lib --features cabi,wide,sampler                               exit=0 errors=0 warnings=3
+check --lib --features rand,cabi,wide,sampler                          exit=0 errors=0 warnings=3
+check --lib --features simd,sampler                                    exit=0 errors=0 warnings=12
+check --lib --features rand,simd,sampler                               exit=0 errors=0 warnings=12
+check --lib --features cabi,simd,sampler                               exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,simd,sampler                          exit=0 errors=0 warnings=12
+check --lib --features wide,simd,sampler                               exit=0 errors=0 warnings=12
+check --lib --features rand,wide,simd,sampler                          exit=0 errors=0 warnings=12
+check --lib --features cabi,wide,simd,sampler                          exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,wide,simd,sampler                     exit=0 errors=0 warnings=12
+check --lib --features seedgen                                         exit=0 errors=0 warnings=0
+check --lib --features rand,seedgen                                    exit=0 errors=0 warnings=0
+check --lib --features cabi,seedgen                                    exit=0 errors=0 warnings=3
+check --lib --features rand,cabi,seedgen                               exit=0 errors=0 warnings=3
+check --lib --features wide,seedgen                                    exit=0 errors=0 warnings=0
+check --lib --features rand,wide,seedgen                               exit=0 errors=0 warnings=0
+check --lib --features cabi,wide,seedgen                               exit=0 errors=0 warnings=3
+check --lib --features rand,cabi,wide,seedgen                          exit=0 errors=0 warnings=3
+check --lib --features simd,seedgen                                    exit=0 errors=0 warnings=12
+check --lib --features rand,simd,seedgen                               exit=0 errors=0 warnings=12
+check --lib --features cabi,simd,seedgen                               exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,simd,seedgen                          exit=0 errors=0 warnings=12
+check --lib --features wide,simd,seedgen                               exit=0 errors=0 warnings=12
+check --lib --features rand,wide,simd,seedgen                          exit=0 errors=0 warnings=12
+check --lib --features cabi,wide,simd,seedgen                          exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,wide,simd,seedgen                     exit=0 errors=0 warnings=12
+check --lib --features sampler,seedgen                                 exit=0 errors=0 warnings=0
+check --lib --features rand,sampler,seedgen                            exit=0 errors=0 warnings=0
+check --lib --features cabi,sampler,seedgen                            exit=0 errors=0 warnings=3
+check --lib --features rand,cabi,sampler,seedgen                       exit=0 errors=0 warnings=3
+check --lib --features wide,sampler,seedgen                            exit=0 errors=0 warnings=0
+check --lib --features rand,wide,sampler,seedgen                       exit=0 errors=0 warnings=0
+check --lib --features cabi,wide,sampler,seedgen                       exit=0 errors=0 warnings=3
+check --lib --features rand,cabi,wide,sampler,seedgen                  exit=0 errors=0 warnings=3
+check --lib --features simd,sampler,seedgen                            exit=0 errors=0 warnings=12
+check --lib --features rand,simd,sampler,seedgen                       exit=0 errors=0 warnings=12
+check --lib --features cabi,simd,sampler,seedgen                       exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,simd,sampler,seedgen                  exit=0 errors=0 warnings=12
+check --lib --features wide,simd,sampler,seedgen                       exit=0 errors=0 warnings=12
+check --lib --features rand,wide,simd,sampler,seedgen                  exit=0 errors=0 warnings=12
+check --lib --features cabi,wide,simd,sampler,seedgen                  exit=0 errors=0 warnings=12
+check --lib --features rand,cabi,wide,simd,sampler,seedgen             exit=0 errors=0 warnings=12
+test --doc (no features)                                               exit=0 errors=0 warnings=0
+test --doc --all-features                                              exit=0 errors=0 warnings=12
+build --all-targets --all-features                                     exit=0 errors=0 warnings=24
+doc --no-deps --all-features                                           exit=0 errors=0 warnings=0
++nightly check aarch64-unknown-linux-gnu (no features)                 exit=0 errors=0 warnings=0
++nightly check aarch64-unknown-linux-gnu --features simd               exit=0 errors=0 warnings=0
++nightly check aarch64-unknown-linux-gnu --features wide,sampler,rand,seedgen,cabi exit=0 errors=0 warnings=3
++nightly check aarch64-unknown-linux-gnu --all-features                exit=0 errors=0 warnings=3
++nightly check i686-pc-windows-msvc (no features)                      exit=0 errors=0 warnings=0
++nightly check i686-pc-windows-msvc --features simd                    exit=0 errors=0 warnings=0
++nightly check i686-pc-windows-msvc --features wide,sampler,rand,seedgen,cabi exit=0 errors=0 warnings=3
++nightly check i686-pc-windows-msvc --all-features                     exit=0 errors=0 warnings=3
++nightly check powerpc64-unknown-linux-gnu (no features)               exit=0 errors=0 warnings=0
++nightly check powerpc64-unknown-linux-gnu --features simd             exit=0 errors=0 warnings=0
++nightly check powerpc64-unknown-linux-gnu --features wide,sampler,rand,seedgen,cabi exit=0 errors=0 warnings=3
++nightly check powerpc64-unknown-linux-gnu --all-features              exit=0 errors=0 warnings=3
+# done 2026-10-16T18:20:28
