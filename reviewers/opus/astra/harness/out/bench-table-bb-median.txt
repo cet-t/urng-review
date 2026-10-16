@@ -1,0 +1,11 @@
+﻿# variable-bound (black_box) cases: median of 4 runs [min-max of run medians], ns/word
+## profile: release (non-LTO)
+rust::Sfc32::randi(bb 0,999)           base=1.099 [1.06-1.20] sol=1.782 [1.75-2.61] astra=4.502 [3.54-9.32]
+rust::Xoshiro256Pp::randi(bb 0,999)    base=1.283 [1.23-1.41] sol=2.451 [2.22-2.75] astra=3.395 [3.09-5.30]
+rust::Sfc32::randf(bb 0,1)             base=0.910 [0.87-1.02] sol=1.976 [1.75-2.63] astra=2.260 [2.07-4.08]
+rust::Xoshiro256Pp::randf(bb -1,1)     base=0.973 [0.91-1.14] sol=2.054 [1.85-2.30] astra=2.393 [2.31-3.84]
+## profile: lto (fat LTO, cgu=1)
+rust::Sfc32::randi(bb 0,999)           base=1.097 [1.05-1.27] sol=1.989 [1.85-2.05] astra=4.192 [3.69-4.72]
+rust::Xoshiro256Pp::randi(bb 0,999)    base=1.317 [1.24-1.44] sol=2.347 [2.15-2.52] astra=3.417 [3.20-4.57]
+rust::Sfc32::randf(bb 0,1)             base=0.850 [0.76-1.24] sol=1.928 [1.76-3.20] astra=2.370 [2.16-2.81]
+rust::Xoshiro256Pp::randf(bb -1,1)     base=0.947 [0.88-1.07] sol=2.149 [1.93-2.69] astra=3.067 [2.49-4.49]
