@@ -1,0 +1,107 @@
+COMMAND: cargo test --offline --features rand --test sol_rand64_review
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\astra\work)
+warning: function `array_randi` is never used
+   --> src\rng.rs:182:15
+    |
+182 | pub(crate) fn array_randi<W: Word, const N: usize>(
+    |               ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `urng` (lib) generated 1 warning
+error[E0277]: the trait bound `SplitMix64: TryRng` is not satisfied
+ --> tests\sol_rand64_review.rs:5:19
+  |
+5 |     require_rng::<urng::SplitMix64>();
+  |                   ^^^^^^^^^^^^^^^^ the trait `DerefMut` is not implemented for `SplitMix64`
+  |
+  = help: the following other types implement trait `TryRng`:
+            Mt19937
+            Pcg32
+            Philox32
+            Sfc32
+            Sfmt11213
+            Sfmt1279
+            Sfmt132049
+            Sfmt19937
+          and 15 others
+  = note: required for `SplitMix64` to implement `TryRng`
+note: required by a bound in `require_rng`
+ --> tests\sol_rand64_review.rs:2:19
+  |
+2 | fn require_rng<T: rand_core::TryRng>() {}
+  |                   ^^^^^^^^^^^^^^^^^ required by this bound in `require_rng`
+
+error[E0277]: the trait bound `Xoshiro256Pp: TryRng` is not satisfied
+ --> tests\sol_rand64_review.rs:6:19
+  |
+6 |     require_rng::<urng::Xoshiro256Pp>();
+  |                   ^^^^^^^^^^^^^^^^^^ the trait `DerefMut` is not implemented for `Xoshiro256Pp`
+  |
+  = help: the following other types implement trait `TryRng`:
+            Mt19937
+            Pcg32
+            Philox32
+            Sfc32
+            Sfmt11213
+            Sfmt1279
+            Sfmt132049
+            Sfmt19937
+          and 15 others
+  = note: required for `Xoshiro256Pp` to implement `TryRng`
+note: required by a bound in `require_rng`
+ --> tests\sol_rand64_review.rs:2:19
+  |
+2 | fn require_rng<T: rand_core::TryRng>() {}
+  |                   ^^^^^^^^^^^^^^^^^ required by this bound in `require_rng`
+
+error[E0277]: the trait bound `Sfc64: TryRng` is not satisfied
+ --> tests\sol_rand64_review.rs:7:19
+  |
+7 |     require_rng::<urng::Sfc64>();
+  |                   ^^^^^^^^^^^ the trait `DerefMut` is not implemented for `Sfc64`
+  |
+  = help: the following other types implement trait `TryRng`:
+            Mt19937
+            Pcg32
+            Philox32
+            Sfc32
+            Sfmt11213
+            Sfmt1279
+            Sfmt132049
+            Sfmt19937
+          and 15 others
+  = note: required for `Sfc64` to implement `TryRng`
+note: required by a bound in `require_rng`
+ --> tests\sol_rand64_review.rs:2:19
+  |
+2 | fn require_rng<T: rand_core::TryRng>() {}
+  |                   ^^^^^^^^^^^^^^^^^ required by this bound in `require_rng`
+
+error[E0277]: the trait bound `Philox4x64: TryRng` is not satisfied
+ --> tests\sol_rand64_review.rs:8:19
+  |
+8 |     require_rng::<urng::Philox4x64>();
+  |                   ^^^^^^^^^^^^^^^^ the trait `DerefMut` is not implemented for `Philox4x64`
+  |
+  = help: the following other types implement trait `TryRng`:
+            Mt19937
+            Pcg32
+            Philox32
+            Sfc32
+            Sfmt11213
+            Sfmt1279
+            Sfmt132049
+            Sfmt19937
+          and 15 others
+  = note: required for `Philox4x64` to implement `TryRng`
+note: required by a bound in `require_rng`
+ --> tests\sol_rand64_review.rs:2:19
+  |
+2 | fn require_rng<T: rand_core::TryRng>() {}
+  |                   ^^^^^^^^^^^^^^^^^ required by this bound in `require_rng`
+
+For more information about this error, try `rustc --explain E0277`.
+error: could not compile `urng` (test "sol_rand64_review") due to 4 previous errors
+
+EXIT: 101

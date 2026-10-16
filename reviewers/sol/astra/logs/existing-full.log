@@ -1,0 +1,334 @@
+cargo :    Compiling proc-macro2 v1.0.106
+発生場所 行:2 文字:1
++ cargo test --offline --lib --tests --features full *> ..\logs\existin ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (   Compiling proc-macro2 v1.0.106:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.46
+   Compiling memchr v2.8.3
+   Compiling cfg-if v1.0.4
+   Compiling windows-link v0.2.1
+   Compiling simd-adler32 v0.3.9
+   Compiling crc32fast v1.5.0
+   Compiling winapi v0.3.9
+   Compiling autocfg v1.5.1
+   Compiling serde_core v1.0.229
+   Compiling crossbeam-utils v0.8.22
+   Compiling semver v1.0.28
+   Compiling crossbeam-epoch v0.9.20
+   Compiling adler2 v2.0.1
+   Compiling crossbeam-deque v0.8.7
+   Compiling windows-sys v0.61.2
+   Compiling zerocopy v0.8.54
+   Compiling regex-syntax v0.8.11
+   Compiling rustc_version v0.4.1
+   Compiling aho-corasick v1.1.4
+   Compiling miniz_oxide v0.8.9
+   Compiling num-traits v0.2.19
+   Compiling libc v0.2.186
+   Compiling pathfinder_simd v0.5.6
+   Compiling fdeflate v0.3.7
+   Compiling either v1.16.0
+   Compiling winapi-util v0.1.11
+   Compiling serde v1.0.229
+   Compiling zmij v1.0.23
+   Compiling color_quant v1.1.0
+   Compiling rayon-core v1.13.0
+   Compiling flate2 v1.1.9
+   Compiling find-msvc-tools v0.1.9
+   Compiling regex-automata v0.4.15
+   Compiling bitflags v1.3.2
+   Compiling byteorder v1.5.0
+   Compiling shlex v2.0.1
+   Compiling png v0.17.16
+   Compiling syn v2.0.118
+   Compiling syn v3.0.0
+   Compiling cc v1.2.66
+   Compiling same-file v1.0.6
+   Compiling itoa v1.0.18
+   Compiling log v0.4.33
+   Compiling serde_json v1.0.150
+   Compiling weezl v0.1.12
+   Compiling lazy_static v1.5.0
+   Compiling font-kit v0.14.3
+   Compiling plotters-backend v0.3.7
+   Compiling jpeg-decoder v0.3.2
+   Compiling pathfinder_geometry v0.5.1
+   Compiling walkdir v2.5.0
+   Compiling gif v0.12.0
+   Compiling ciborium-io v0.2.2
+   Compiling bitflags v2.13.0
+   Compiling rand_core v0.10.1
+   Compiling wio v0.2.2
+   Compiling float-ord v0.3.2
+   Compiling clap_lex v1.1.0
+   Compiling regex v1.13.0
+   Compiling dwrote v0.11.5
+   Compiling alloca v0.4.0
+   Compiling anstyle v1.0.14
+   Compiling rayon v1.12.0
+   Compiling plotters-svg v0.3.7
+   Compiling chrono v0.4.45
+   Compiling itertools v0.13.0
+   Compiling csv-core v0.1.13
+   Compiling clap_builder v4.6.2
+   Compiling anyhow v1.0.104
+   Compiling ryu v1.0.23
+   Compiling cast v0.3.0
+   Compiling csbindgen v1.9.8
+   Compiling ttf-parser v0.20.0
+   Compiling pastey v0.2.3
+   Compiling clap v4.6.2
+   Compiling criterion-plot v0.8.2
+   Compiling csv v1.4.0
+   Compiling page_size v0.6.0
+   Compiling serde_derive v1.0.229
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling rand_sfc v0.2.0
+   Compiling rand v0.10.2
+   Compiling wrapn v0.10.0
+   Compiling colored v3.1.1
+   Compiling thousands v0.2.0
+   Compiling bytemuck_derive v1.10.2
+   Compiling zerocopy-derive v0.8.54
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\astra\work)
+   Compiling bytemuck v1.25.0
+   Compiling image v0.24.9
+   Compiling safe_arch v1.0.0
+   Compiling wide v1.5.0
+   Compiling tinytemplate v1.2.1
+   Compiling plotters-bitmap v0.3.7
+   Compiling plotters v0.3.7
+   Compiling half v2.7.1
+   Compiling ciborium-ll v0.2.2
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.8.2
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 27.38s
+     Running unittests src\lib.rs (target\debug\deps\urng-1d0d5708e69d8996.exe)
+
+running 114 tests
+test _internal::tests::default_seed_calls_are_distinct ... ok
+test cbrng::b32::squares::tests::test_squares32 ... ok
+test _internal::tests::fill_chunk_writes_every_element ... ok
+test _internal::tests::fill_chunk_nt_small_batch_falls_back ... ok
+test cbrng::b32::philox::regression::random123_known_answer_and_counter_carry ... ok
+test _internal::tests::fill_chunk_nt_writes_every_element ... ok
+test cbrng::b32::threefry::tests::test_threefry32x2 ... ok
+test cbrng::b32::threefry::tests::test_threefry32x4 ... ok
+test cbrng::b64::philox::tests::random123_known_answers ... ok
+test cbrng::b64::philox::tests::test_philox4x64 ... ok
+test cbrng::b64::philox::tests::test_philox64 ... ok
+test cbrng::b64::threefish::tests::test_threefish256 ... ok
+test choice::tests::it_works ... ok
+test cbrng::b32::philox::regression::all_four_streams_match_scalar_and_reference_at_carry ... ok
+test cbrng::b32::philox::tests::test_philox32 ... ok
+test crng::b32::chacha::regression::rfc8439_block_and_counter ... ok
+test crng::b32::chacha::tests::test_cha_cha20 ... ok
+test crng::b32::chacha::tests::test_cha_cha8 ... ok
+test crng::b32::salsa::regression::rfc7914_salsa8_core ... ok
+test crng::b32::salsa::regression::counter_carry_and_exhaustion ... ok
+test crng::b32::salsa::tests::test_salsa20 ... ok
+test crng::b32::salsa::tests::test_salsa8 ... ok
+test prng::b32::jsf::tests::test_jsf32 ... ok
+test prng::b32::mersenne::tests::test_mt19937 ... ok
+test prng::b32::mersenne::tests::test_sfmt11213 ... ok
+test prng::b32::mersenne::tests::test_sfmt1279 ... ok
+test prng::b32::mersenne::tests::test_sfmt19937 ... ok
+test prng::b32::mersenne::tests::test_sfmt2281 ... ok
+test prng::b32::mersenne::tests::test_sfmt132049 ... ok
+test prng::b32::mersenne::tests::test_sfmt4253 ... ok
+test prng::b32::mersenne::tests::test_sfmt607 ... ok
+test prng::b32::mersenne::tests::test_sfmt44497 ... ok
+test prng::b32::mersenne::tests::test_sfmt216091 ... ok
+test prng::b32::pcg::regression::official_pcg_demo_vector_and_odd_increments ... ok
+test prng::b32::mersenne::tests::test_sfmt86243 ... ok
+test prng::b32::pcg::tests::test_pcg32 ... ok
+test prng::b32::sfc::tests::sfc32x4_lanes_match_scalar ... ok
+test prng::b32::sfc::tests::sfc32x4_randiv_randfv_match_scalar ... ok
+test prng::b32::sfc::tests::test_sfc32 ... ok
+test prng::b32::sfc::tests::test_sfc32x16 ... ok
+test prng::b32::sfc::tests::test_sfc32x4 ... ok
+test prng::b32::sfc::tests::test_sfc32x8 ... ok
+test prng::b32::splitmix::tests::test_split_mix32 ... ok
+test prng::b32::xoroshiro::tests::test_xoroshiro64_ss ... ok
+test prng::b32::xorshift::tests::test_xorshift128 ... ok
+test prng::b32::xorshift::tests::test_xorshift32 ... ok
+test prng::b32::xorwow::tests::test_xorwow ... ok
+test prng::b32::pcg::regression::simd_all_lanes_match_scalar_and_reference ... ok
+test prng::b32::xoshiro::tests::test_xoshiro128_pp ... ok
+test prng::b32::xoshiro::tests::test_xoshiro128_ss ... ok
+test prng::b64::biski::tests::test_biski64 ... ok
+test prng::b64::cet::tests::test_cet256 ... ok
+test prng::b64::cet::tests::test_cet64 ... ok
+test prng::b64::mersenne::tests::test_mt1993764 ... ok
+test prng::b64::mersenne::tests::test_sfmt1993764 ... ok
+test prng::b64::sfc::tests::test_sfc64 ... ok
+test prng::b64::splitmix::tests::test_split_mix64 ... ok
+test prng::b64::twisted_gfsr::tests::test_twisted_g_f_s_r ... ok
+test prng::b64::wyhash::tests::test_wy_hash64 ... ok
+test prng::b64::xoroshiro::tests::test_xoroshiro128_pp ... ok
+test prng::b64::xoroshiro::tests::test_xoroshiro128_ss ... ok
+test prng::b64::xorshift::tests::test_xorshift64 ... ok
+test prng::b64::xoshiro::tests::test_xoshiro256_pp ... ok
+test prng::b64::xoshiro::tests::test_xoshiro256_ss ... ok
+test rand::b32::tests::philox32_works ... ok
+test prng::b64::xoshiro::tests::packed_xoshiro_two_streams_match_reference_and_scalar ... ok
+test rand::b32::tests::sfmt19937_works ... ok
+test sampler::b32::alias::tests::alias32_works ... ok
+test sampler::b32::bst::tests::bst32_works ... ok
+test wide::jsf::tests::test_jsf32x16 ... ok
+test wide::jsf::tests::test_jsf32x4 ... ok
+test wide::jsf::tests::test_jsf32x8 ... ok
+test wide::pcg::tests::test_pcg32x16 ... ok
+test wide::pcg::tests::test_pcg32x4 ... ok
+test wide::pcg::tests::test_pcg32x8 ... ok
+test wide::sfc::tests::test_sfc32x16 ... ok
+test wide::sfc::tests::test_sfc32x4 ... ok
+test prng::b64::biski::regression::all_lanes_match_scalar_and_independent_reference ... ok
+test wide::sfc::tests::test_sfc32x8 ... ok
+test wide::splitmix::tests::test_split_mix32x16 ... ok
+test wide::splitmix::tests::test_split_mix32x4 ... ok
+test wide::splitmix::tests::test_split_mix32x8 ... ok
+test wide::squares::tests::test_squares32x4 ... ok
+test wide::squares::tests::test_squares32x8 ... ok
+test prng::b64::sfc::regression::all_lanes_match_scalar_and_independent_reference ... ok
+test wide::threefry::tests::test_threefry32x2x4 ... ok
+test wide::threefry::tests::test_threefry32x2x16 ... ok
+test prng::b32::xoroshiro::regression::all_lanes_match_scalar_and_independent_reference ... ok
+test wide::threefry::tests::test_threefry32x2x8 ... ok
+test wide::threefry::tests::test_threefry32x4x4 ... ok
+test wide::threefry::tests::test_threefry32x4x16 ... ok
+test wide::wrng::tests::seed_and_default_are_wired ... ok
+test wide::xoroshiro::tests::test_xoroshiro64_ssx16 ... ok
+test wide::threefry::tests::test_threefry32x4x8 ... ok
+test wide::xoroshiro::tests::test_xoroshiro64_ssx4 ... ok
+test wide::xoroshiro::tests::test_xoroshiro64_ssx8 ... ok
+test wide::xorshift::tests::test_xorshift128x16 ... ok
+test wide::xorshift::tests::test_xorshift128x4 ... ok
+test wide::xorshift::tests::test_xorshift128x8 ... ok
+test wide::xorshift::tests::test_xorshift32x16 ... ok
+test wide::xorshift::tests::test_xorshift32x4 ... ok
+test wide::xorshift::tests::test_xorshift32x8 ... ok
+test wide::xorshift::tests::test_xorwowx16 ... ok
+test wide::xorshift::tests::test_xorwowx4 ... ok
+test wide::xorshift::tests::test_xorwowx8 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ppx16 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ppx4 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ppx8 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ssx16 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ssx4 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ssx8 ... ok
+test wide::pcg::tests::all_widths_match_scalar_and_reference_with_odd_increments ... ok
+test sampler::b64::bst::tests::bst64_works ... ok
+test sampler::b64::alias::tests::alias64_works ... ok
+
+test result: ok. 114 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\algorithms.rs (target\debug\deps\algorithms-9d3a41e7373c9c9c.exe)
+
+running 8 tests
+test buffered_generators_start_with_generated_block ... ok
+test seeds_preserve_low_bit_and_xorshift_zero_is_repaired ... ok
+test jumps_match_reference_polynomials ... ok
+test twisted_gfsr_has_full_width_and_reaches_each_choice ... ok
+test philox_seeded_blocks_match_reference ... ok
+test scalar_recurrences_match_independent_references ... ok
+test simd_splitmix_matches_consecutive_scalar_words ... ok
+test wide_splitmix_matches_consecutive_scalar_words_at_all_widths ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\cabi.rs (target\debug\deps\cabi-1c9c5df291acceb9.exe)
+
+running 59 tests
+test mixed_numeric_calls_share_pending_simd_words ... ok
+test cet64x8_boundaries_alignment_and_partition ... ok
+test cet256x2_boundaries_alignment_and_partition ... ok
+test biski64_boundaries_alignment_and_partition ... ok
+test rejected_pointers_counts_and_ranges_do_not_touch_memory_or_state ... ok
+test biski64x8_boundaries_alignment_and_partition ... ok
+test cet256_boundaries_alignment_and_partition ... ok
+test cet64_boundaries_alignment_and_partition ... ok
+test jsf32_boundaries_alignment_and_partition ... ok
+test jsf32x16_boundaries_alignment_and_partition ... ok
+test pcg32_boundaries_alignment_and_partition ... ok
+test sfc64x8_boundaries_alignment_and_partition ... ok
+test sfc64_boundaries_alignment_and_partition ... ok
+test sfc32x4_boundaries_alignment_and_partition ... ok
+test philox64_boundaries_alignment_and_partition ... ok
+test sfc32_boundaries_alignment_and_partition ... ok
+test pcg32x8_boundaries_alignment_and_partition ... ok
+test sfc32x8_boundaries_alignment_and_partition ... ok
+test sfc32x16_boundaries_alignment_and_partition ... ok
+test philox32_boundaries_alignment_and_partition ... ok
+test sfmt1279_boundaries_alignment_and_partition ... ok
+test mt1993764_boundaries_alignment_and_partition ... ok
+test splitmix32_boundaries_alignment_and_partition ... ok
+test philox32x4x4_boundaries_alignment_and_partition ... ok
+test splitmix32x16_boundaries_alignment_and_partition ... ok
+test splitmix64_boundaries_alignment_and_partition ... ok
+test sfmt2281_boundaries_alignment_and_partition ... ok
+test sfmt4253_boundaries_alignment_and_partition ... ok
+test sfmt1993764_boundaries_alignment_and_partition ... ok
+test squares32_boundaries_alignment_and_partition ... ok
+test sfmt607_boundaries_alignment_and_partition ... ok
+test xoroshiro128pp_boundaries_alignment_and_partition ... ok
+test twisted_gfsr_boundaries_alignment_and_partition ... ok
+test squares32x8_boundaries_alignment_and_partition ... ok
+test xoroshiro128ss_boundaries_alignment_and_partition ... ok
+test sfmt11213_boundaries_alignment_and_partition ... ok
+test xoroshiro64ss_boundaries_alignment_and_partition ... ok
+test xoroshiro64ssx16_boundaries_alignment_and_partition ... ok
+test xorshift32_boundaries_alignment_and_partition ... ok
+test xorshift64_boundaries_alignment_and_partition ... ok
+test xoroshiro64ssx8_boundaries_alignment_and_partition ... ok
+test threefry32x4_boundaries_alignment_and_partition ... ok
+test sfmt19937_boundaries_alignment_and_partition ... ok
+test threefry32x2_boundaries_alignment_and_partition ... ok
+test xoshiro128pp_boundaries_alignment_and_partition ... ok
+test xoshiro256ssx2_boundaries_alignment_and_partition ... ok
+test xoshiro128ss_boundaries_alignment_and_partition ... ok
+test xoshiro128ppx16_boundaries_alignment_and_partition ... ok
+test xoshiro256pp_boundaries_alignment_and_partition ... ok
+test xoshiro256ss_boundaries_alignment_and_partition ... ok
+test xoshiro128ssx16_boundaries_alignment_and_partition ... ok
+test former_parallel_chunks_preserve_the_reference_stream ... ok
+test xorshift128_boundaries_alignment_and_partition ... ok
+test sfmt44497_boundaries_alignment_and_partition ... ok
+test mt19937_boundaries_alignment_and_partition ... ok
+test threefish256_boundaries_alignment_and_partition ... ok
+test sfmt86243_boundaries_alignment_and_partition ... ok
+test sfmt132049_boundaries_alignment_and_partition ... ok
+test sfmt216091_boundaries_alignment_and_partition ... ok
+
+test result: ok. 59 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\packaging.rs (target\debug\deps\packaging-ae92ea988d9edf70.exe)
+
+running 1 test
+test crate_documentation_path_matches_filename_case ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\ranges.rs (target\debug\deps\ranges-71c05546f16b2f89.exe)
+
+running 6 tests
+test integer_and_index_sampling_reject_biased_low_products ... ok
+test fisher_yates_has_exactly_six_three_element_permutations ... ok
+test wide_rejection_keeps_already_accepted_lanes ... ok
+test float_ranges_exclude_upper_endpoint_and_remain_finite ... ok
+test signed_ranges_include_full_width_without_overflow ... ok
+test cumulative_sampler_skips_zero_weights_and_exact_boundaries ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\simd_conversions.rs (target\debug\deps\simd_conversions-9cad22eac4975673.exe)
+
+running 2 tests
+test conversions_match_each_scalar_lane_without_cpu_preconditions ... ok
+test vector_range_sampling_rejects_each_lane_independently ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

@@ -1,0 +1,15 @@
+[
+  {
+    "name": "cipher-probes",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "--test",
+      "sol_cipher_review",
+      "--",
+      "--nocapture"
+    ],
+    "exit": 101
+  }
+]

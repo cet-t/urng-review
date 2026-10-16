@@ -1,0 +1,17 @@
+[
+  {
+    "name": "counter-probes",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "--features",
+      "wide",
+      "--lib",
+      "sol_counter_probes",
+      "--",
+      "--nocapture"
+    ],
+    "exit": 101
+  }
+]

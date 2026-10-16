@@ -1,0 +1,10 @@
+{
+  "baseline": "19bc224",
+  "target": "astra",
+  "seed": 1,
+  "repetitions": 5,
+  "profile": "release opt=3 lto=fat codegen-units=1, harness rustc -O, default target CPU",
+  "processors": 16,
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "execution": "before and after sequential, no concurrent benchmark, no CPU pinning"
+}

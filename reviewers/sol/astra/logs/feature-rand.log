@@ -1,0 +1,15 @@
+COMMAND: cargo check --offline --lib --features rand
+    Checking rand_core v0.10.1
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\astra\work)
+warning: function `array_randi` is never used
+   --> src\rng.rs:182:15
+    |
+182 | pub(crate) fn array_randi<W: Word, const N: usize>(
+    |               ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `urng` (lib) generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.32s
+
+EXIT: 0

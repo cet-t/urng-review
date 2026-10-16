@@ -1,0 +1,93 @@
+COMMAND: cargo test --offline --features full --test sol_review -- --nocapture
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\astra\work)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.52s
+     Running tests\sol_review.rs (target\debug\deps\sol_review-aafe9eebddf30622.exe)
+
+running 20 tests
+
+thread 'alias32_rejects_invalid_weights' (21704) panicked at tests\sol_review.rs:34:9:
+accepted invalid weights [-1.0, 2.0]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'alias32_small_valid_weight_never_selects_zero' (8488) panicked at tests\sol_review.rs:14:9:
+assertion `left == right` failed: positive weight=1e-45
+  left: 1
+ right: 0
+
+thread 'alias64_small_valid_weight_never_selects_zero' (51512) panicked at tests\sol_review.rs:23:9:
+assertion `left == right` failed: positive weight=5e-324
+  left: 1
+ right: 0
+test full_width_integer_endpoints_match_bijection ... ok
+
+thread 'alias64_rejects_invalid_weights' (43116) panicked at tests\sol_review.rs:45:9:
+accepted invalid weights [-1.0, 2.0]
+
+thread 'scalar_threefry_matches_random123' (63996) panicked at tests\sol_review.rs:118:13:
+assertion `left == right` failed: seed=0 block=0
+  left: [2913757005, 2302305762, 2419161188, 2855054987]
+ right: [3169309817, 2676287226, 2408092820, 3584707056]
+
+thread 'wide_threefry_x16_matches_random123' (63012) panicked at tests\sol_review.rs:143:1:
+assertion `left == right` failed: block=0 lane=0
+  left: [3343892586, 1774806393, 3705022754, 2004757576]
+ right: [884327818, 3506443327, 2617033216, 3396092008]
+
+thread 'wide_threefry_x4_matches_random123' (70984) panicked at tests\sol_review.rs:141:1:
+assertion `left == right` failed: block=0 lane=0
+  left: [3023759841, 2343225285, 1155817591, 3763945978]
+ right: [3307560983, 627444597, 2532636873, 236180073]
+
+thread 'wide_threefry_x8_matches_random123' (19340) panicked at tests\sol_review.rs:142:1:
+assertion `left == right` failed: block=0 lane=0
+  left: [1808108675, 1066733367, 3579935953, 3745723335]
+ right: [1917405559, 3188067869, 880888030, 609380665]
+
+thread 'wide_xorshift32_x4_avoids_zero_state' (79916) panicked at tests\sol_review.rs:219:1:
+lane 0 is stuck: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+thread 'wide_xorshift32_x16_avoids_zero_state' (42172) panicked at tests\sol_review.rs:221:1:
+lane 0 is stuck: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+thread 'wide_xorshift32_x8_avoids_zero_state' (57556) panicked at tests\sol_review.rs:220:1:
+lane 0 is stuck: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+test alias32_small_valid_weight_never_selects_zero ... FAILED
+test alias64_small_valid_weight_never_selects_zero ... FAILED
+test alias32_rejects_invalid_weights ... FAILED
+test float64_finite_extreme_endpoints_remain_in_range ... ok
+test alias64_rejects_invalid_weights ... FAILED
+test scalar_threefry_matches_random123 ... FAILED
+test independent_threefry_reference_matches_official_kats ... ok
+test wide_threefry_x16_matches_random123 ... FAILED
+test wide_threefry_x4_matches_random123 ... FAILED
+test wide_threefry_x8_matches_random123 ... FAILED
+test float32_finite_extreme_endpoints_remain_in_range ... ok
+test wide_xorshift32_x4_avoids_zero_state ... FAILED
+test wide_xorshift32_x16_avoids_zero_state ... FAILED
+test wide_xorshift32_x8_avoids_zero_state ... FAILED
+test xoroshiro128pp_jumps_match_author ... ok
+test xoroshiro128ss_jumps_match_author ... ok
+test xoshiro256pp_matches_author_reference ... ok
+test cabi_splitmix_continues_across_calls ... ok
+test cabi_threefry_continues_across_odd_calls ... ok
+
+failures:
+
+failures:
+    alias32_rejects_invalid_weights
+    alias32_small_valid_weight_never_selects_zero
+    alias64_rejects_invalid_weights
+    alias64_small_valid_weight_never_selects_zero
+    scalar_threefry_matches_random123
+    wide_threefry_x16_matches_random123
+    wide_threefry_x4_matches_random123
+    wide_threefry_x8_matches_random123
+    wide_xorshift32_x16_avoids_zero_state
+    wide_xorshift32_x4_avoids_zero_state
+    wide_xorshift32_x8_avoids_zero_state
+
+test result: FAILED. 9 passed; 11 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+error: test failed, to rerun pass `--test sol_review`
+
+EXIT: 101

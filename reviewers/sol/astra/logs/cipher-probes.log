@@ -1,0 +1,41 @@
+COMMAND: cargo test --offline --test sol_cipher_review -- --nocapture
+warning: function `array_randi` is never used
+   --> src\rng.rs:182:15
+    |
+182 | pub(crate) fn array_randi<W: Word, const N: usize>(
+    |               ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `urng` (lib) generated 1 warning
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\astra\work)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.39s
+     Running tests\sol_cipher_review.rs (target\debug\deps\sol_cipher_review-6961a62c8f69e2f8.exe)
+
+running 7 tests
+
+thread 'chacha_key_does_not_appear_in_debug_output' (18116) panicked at tests\sol_cipher_review.rs:51:5:
+ChaCha Debug exposes key: ChaCha { x: [Wrap(1634760805), Wrap(857760878), Wrap(2036477234), Wrap(1797285236), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(0), Wrap(0), Wrap(0), Wrap(0)], exhausted: false, buf: [Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0)], pos: Wrap(16) }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'salsa_key_does_not_appear_in_debug_output' (41816) panicked at tests\sol_cipher_review.rs:test reference::chacha_reference_rfc8439_known_answer ... 58:ok
+5:
+Salsa Debug exposes key: Salsa { x: [Wrap(1634760805), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(857760878), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(2036477234), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(2812782503), Wrap(1797285236)], exhausted: false, buf: [Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0)], pos: Wrap(16) }test chacha20_independent_blocks ... ok
+
+test chacha8_independent_blocks ... ok
+test salsa20_independent_blocks ... ok
+test salsa8_independent_blocks ... ok
+test chacha_key_does_not_appear_in_debug_output ... FAILED
+test salsa_key_does_not_appear_in_debug_output ... FAILED
+
+failures:
+
+failures:
+    chacha_key_does_not_appear_in_debug_output
+    salsa_key_does_not_appear_in_debug_output
+
+test result: FAILED. 5 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test sol_cipher_review`
+
+EXIT: 101

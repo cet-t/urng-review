@@ -1,0 +1,134 @@
+
+.NET 10.0 へようこそ!
+---------------------
+SDK バージョン: 10.0.401
+
+----------------
+ASP.NET Core HTTPS 開発証明書をインストールしました。
+証明書を信頼するには、'dotnet dev-certs https --trust' を実行します
+HTTPS の詳細情報: https://aka.ms/dotnet-https
+
+----------------
+最初のアプリを作成するには、https://aka.ms/dotnet-hello-world を参照してください
+最新情報については、https://aka.ms/dotnet-whats-new を参照してください
+ドキュメントを探すには、https://aka.ms/dotnet-docs を参照してください
+GitHub で問題の報告とソースの検索を行うには、https://github.com/dotnet/core を参照してください
+'dotnet --help' を使用して使用可能なコマンドを確認するか、https://aka.ms/dotnet-cli にアクセスしてください
+--------------------------------------------------------------------------------------
+  復元対象のプロジェクトを決定しています...
+  D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj を復元しました (47 ミリ秒)。
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(147,32): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(158,50): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(169,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(180,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(191,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(202,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(208,32): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(219,51): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(230,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(241,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(252,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(263,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(269,32): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(280,51): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(291,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(302,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(313,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(324,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(330,32): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(341,51): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(352,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(363,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(374,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(385,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(391,32): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(402,52): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(413,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(424,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(435,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(446,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(452,32): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(463,52): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(474,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(485,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(496,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(507,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(513,32): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(524,52): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(535,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(546,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(557,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(568,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(574,32): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(585,53): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(596,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(607,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(618,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(629,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(635,32): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(646,53): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(657,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(668,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(679,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(690,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+
+ビルドに失敗しました。
+
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(147,32): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(158,50): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(169,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(180,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(191,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(202,55): error CS0246: 型または名前空間の名前 'Sfmt607' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(208,32): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(219,51): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(230,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(241,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(252,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(263,56): error CS0246: 型または名前空間の名前 'Sfmt1279' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(269,32): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(280,51): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(291,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(302,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(313,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(324,56): error CS0246: 型または名前空間の名前 'Sfmt2281' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(330,32): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(341,51): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(352,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(363,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(374,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(385,56): error CS0246: 型または名前空間の名前 'Sfmt4253' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(391,32): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(402,52): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(413,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(424,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(435,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(446,57): error CS0246: 型または名前空間の名前 'Sfmt11213' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(452,32): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(463,52): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(474,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(485,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(496,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(507,57): error CS0246: 型または名前空間の名前 'Sfmt44497' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(513,32): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(524,52): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(535,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(546,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(557,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(568,57): error CS0246: 型または名前空間の名前 'Sfmt86243' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(574,32): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(585,53): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(596,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(607,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(618,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(629,58): error CS0246: 型または名前空間の名前 'Sfmt132049' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(635,32): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(646,53): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(657,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(668,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(679,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+D:\.repo\urng-review\reviewers\sol\astra\work-csharp\RngNative.cs(690,58): error CS0246: 型または名前空間の名前 'Sfmt216091' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください) [D:\.repo\urng-review\reviewers\sol\astra\work-csharp\review.csproj]
+    0 個の警告
+    54 エラー
+
+経過時間 00:00:00.75

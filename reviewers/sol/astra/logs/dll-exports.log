@@ -1,0 +1,1605 @@
+
+File: D:\.repo\urng-review\reviewers\sol\astra\work\target\release\urng.dll
+Format: COFF-x86-64
+Arch: x86_64
+AddressSize: 64bit
+Export {
+  Ordinal: 1
+  Name: biski64_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 2
+  Name: biski64_new
+  RVA: 0xCA00
+}
+Export {
+  Ordinal: 3
+  Name: biski64_next_f64s
+  RVA: 0xCB10
+}
+Export {
+  Ordinal: 4
+  Name: biski64_next_u64s
+  RVA: 0xCC10
+}
+Export {
+  Ordinal: 5
+  Name: biski64_rand_f64s
+  RVA: 0xCCE0
+}
+Export {
+  Ordinal: 6
+  Name: biski64_rand_i64s
+  RVA: 0xD250
+}
+Export {
+  Ordinal: 7
+  Name: biski64x8_free
+  RVA: 0xD4C0
+}
+Export {
+  Ordinal: 8
+  Name: biski64x8_new
+  RVA: 0xD4E0
+}
+Export {
+  Ordinal: 9
+  Name: biski64x8_next_f64s
+  RVA: 0xDEB0
+}
+Export {
+  Ordinal: 10
+  Name: biski64x8_next_u64s
+  RVA: 0xDFD0
+}
+Export {
+  Ordinal: 11
+  Name: biski64x8_rand_f64s
+  RVA: 0xE0D0
+}
+Export {
+  Ordinal: 12
+  Name: biski64x8_rand_i64s
+  RVA: 0xE6B0
+}
+Export {
+  Ordinal: 13
+  Name: cet256_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 14
+  Name: cet256_new
+  RVA: 0xE8F0
+}
+Export {
+  Ordinal: 15
+  Name: cet256_next_f64s
+  RVA: 0xEA70
+}
+Export {
+  Ordinal: 16
+  Name: cet256_next_u64s
+  RVA: 0xEBA0
+}
+Export {
+  Ordinal: 17
+  Name: cet256_rand_f64s
+  RVA: 0xECB0
+}
+Export {
+  Ordinal: 18
+  Name: cet256_rand_i64s
+  RVA: 0xF010
+}
+Export {
+  Ordinal: 19
+  Name: cet256x2_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 20
+  Name: cet256x2_new
+  RVA: 0xF310
+}
+Export {
+  Ordinal: 21
+  Name: cet256x2_next_u64s
+  RVA: 0xF400
+}
+Export {
+  Ordinal: 22
+  Name: cet64_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 23
+  Name: cet64_new
+  RVA: 0xF4C0
+}
+Export {
+  Ordinal: 24
+  Name: cet64_next_f64s
+  RVA: 0xF560
+}
+Export {
+  Ordinal: 25
+  Name: cet64_next_u64s
+  RVA: 0xF660
+}
+Export {
+  Ordinal: 26
+  Name: cet64_rand_f64s
+  RVA: 0xF740
+}
+Export {
+  Ordinal: 27
+  Name: cet64_rand_i64s
+  RVA: 0xFCE0
+}
+Export {
+  Ordinal: 28
+  Name: cet64x8_free
+  RVA: 0xFF60
+}
+Export {
+  Ordinal: 29
+  Name: cet64x8_new
+  RVA: 0xFF80
+}
+Export {
+  Ordinal: 30
+  Name: cet64x8_next_u64s
+  RVA: 0x100B0
+}
+Export {
+  Ordinal: 31
+  Name: jsf32_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 32
+  Name: jsf32_new
+  RVA: 0x101A0
+}
+Export {
+  Ordinal: 33
+  Name: jsf32_next_f32s
+  RVA: 0x102A0
+}
+Export {
+  Ordinal: 34
+  Name: jsf32_next_u32s
+  RVA: 0x10380
+}
+Export {
+  Ordinal: 35
+  Name: jsf32_rand_f32s
+  RVA: 0x10450
+}
+Export {
+  Ordinal: 36
+  Name: jsf32_rand_i32s
+  RVA: 0x10920
+}
+Export {
+  Ordinal: 37
+  Name: jsf32x16_free
+  RVA: 0x10B70
+}
+Export {
+  Ordinal: 38
+  Name: jsf32x16_new
+  RVA: 0x10B90
+}
+Export {
+  Ordinal: 39
+  Name: jsf32x16_next_f32s
+  RVA: 0x10C60
+}
+Export {
+  Ordinal: 40
+  Name: jsf32x16_next_u32s
+  RVA: 0x11150
+}
+Export {
+  Ordinal: 41
+  Name: jsf32x16_rand_f32s
+  RVA: 0x11630
+}
+Export {
+  Ordinal: 42
+  Name: jsf32x16_rand_i32s
+  RVA: 0x11C90
+}
+Export {
+  Ordinal: 43
+  Name: mt1993764_free
+  RVA: 0x12270
+}
+Export {
+  Ordinal: 44
+  Name: mt1993764_new
+  RVA: 0x12290
+}
+Export {
+  Ordinal: 45
+  Name: mt1993764_next_f64s
+  RVA: 0x123E0
+}
+Export {
+  Ordinal: 46
+  Name: mt1993764_next_u64s
+  RVA: 0x126C0
+}
+Export {
+  Ordinal: 47
+  Name: mt1993764_rand_f64s
+  RVA: 0x12970
+}
+Export {
+  Ordinal: 48
+  Name: mt1993764_rand_i64s
+  RVA: 0x12E50
+}
+Export {
+  Ordinal: 49
+  Name: mt19937_free
+  RVA: 0x13230
+}
+Export {
+  Ordinal: 50
+  Name: mt19937_new
+  RVA: 0x13250
+}
+Export {
+  Ordinal: 51
+  Name: mt19937_next_f32s
+  RVA: 0x13380
+}
+Export {
+  Ordinal: 52
+  Name: mt19937_next_u32s
+  RVA: 0x13710
+}
+Export {
+  Ordinal: 53
+  Name: mt19937_rand_f32s
+  RVA: 0x13A70
+}
+Export {
+  Ordinal: 54
+  Name: mt19937_rand_i32s
+  RVA: 0x13FC0
+}
+Export {
+  Ordinal: 55
+  Name: pcg32_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 56
+  Name: pcg32_new
+  RVA: 0x14400
+}
+Export {
+  Ordinal: 57
+  Name: pcg32_next_f32s
+  RVA: 0x14540
+}
+Export {
+  Ordinal: 58
+  Name: pcg32_next_u32s
+  RVA: 0x14630
+}
+Export {
+  Ordinal: 59
+  Name: pcg32_rand_f32s
+  RVA: 0x146F0
+}
+Export {
+  Ordinal: 60
+  Name: pcg32_rand_i32s
+  RVA: 0x14BF0
+}
+Export {
+  Ordinal: 61
+  Name: pcg32x8_free
+  RVA: 0xFF60
+}
+Export {
+  Ordinal: 62
+  Name: pcg32x8_new
+  RVA: 0x14E20
+}
+Export {
+  Ordinal: 63
+  Name: pcg32x8_next_f32s
+  RVA: 0x14EE0
+}
+Export {
+  Ordinal: 64
+  Name: pcg32x8_next_u32s
+  RVA: 0x14FF0
+}
+Export {
+  Ordinal: 65
+  Name: pcg32x8_rand_f32s
+  RVA: 0x150D0
+}
+Export {
+  Ordinal: 66
+  Name: pcg32x8_rand_i32s
+  RVA: 0x155E0
+}
+Export {
+  Ordinal: 67
+  Name: philox32_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 68
+  Name: philox32_new
+  RVA: 0x157E0
+}
+Export {
+  Ordinal: 69
+  Name: philox32_next_f32s
+  RVA: 0x15970
+}
+Export {
+  Ordinal: 70
+  Name: philox32_next_u32s
+  RVA: 0x15A30
+}
+Export {
+  Ordinal: 71
+  Name: philox32_rand_f32s
+  RVA: 0x15AE0
+}
+Export {
+  Ordinal: 72
+  Name: philox32_rand_i32s
+  RVA: 0x15FB0
+}
+Export {
+  Ordinal: 73
+  Name: philox32x4x4_free
+  RVA: 0x16160
+}
+Export {
+  Ordinal: 74
+  Name: philox32x4x4_new
+  RVA: 0x16180
+}
+Export {
+  Ordinal: 75
+  Name: philox32x4x4_next_f32s
+  RVA: 0x16250
+}
+Export {
+  Ordinal: 76
+  Name: philox32x4x4_next_u32s
+  RVA: 0x16370
+}
+Export {
+  Ordinal: 77
+  Name: philox32x4x4_rand_f32s
+  RVA: 0x16470
+}
+Export {
+  Ordinal: 78
+  Name: philox32x4x4_rand_i32s
+  RVA: 0x169F0
+}
+Export {
+  Ordinal: 79
+  Name: philox64_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 80
+  Name: philox64_new
+  RVA: 0x16C20
+}
+Export {
+  Ordinal: 81
+  Name: philox64_next_f64s
+  RVA: 0x16D10
+}
+Export {
+  Ordinal: 82
+  Name: philox64_next_u64s
+  RVA: 0x16DF0
+}
+Export {
+  Ordinal: 83
+  Name: philox64_rand_f64s
+  RVA: 0x16EA0
+}
+Export {
+  Ordinal: 84
+  Name: philox64_rand_i64s
+  RVA: 0x17400
+}
+Export {
+  Ordinal: 85
+  Name: sfc32_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 86
+  Name: sfc32_new
+  RVA: 0x178A0
+}
+Export {
+  Ordinal: 87
+  Name: sfc32_next_f32s
+  RVA: 0x179A0
+}
+Export {
+  Ordinal: 88
+  Name: sfc32_next_u32s
+  RVA: 0x17A80
+}
+Export {
+  Ordinal: 89
+  Name: sfc32_rand_f32s
+  RVA: 0x17B50
+}
+Export {
+  Ordinal: 90
+  Name: sfc32_rand_i32s
+  RVA: 0x18030
+}
+Export {
+  Ordinal: 91
+  Name: sfc32x16_free
+  RVA: 0x10B70
+}
+Export {
+  Ordinal: 92
+  Name: sfc32x16_new
+  RVA: 0x182C0
+}
+Export {
+  Ordinal: 93
+  Name: sfc32x16_next_f32s
+  RVA: 0x18390
+}
+Export {
+  Ordinal: 94
+  Name: sfc32x16_next_u32s
+  RVA: 0x184C0
+}
+Export {
+  Ordinal: 95
+  Name: sfc32x16_rand_f32s
+  RVA: 0x185D0
+}
+Export {
+  Ordinal: 96
+  Name: sfc32x16_rand_i32s
+  RVA: 0x18B80
+}
+Export {
+  Ordinal: 97
+  Name: sfc32x4_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 98
+  Name: sfc32x4_new
+  RVA: 0x18E00
+}
+Export {
+  Ordinal: 99
+  Name: sfc32x4_next_f32s
+  RVA: 0x18EA0
+}
+Export {
+  Ordinal: 100
+  Name: sfc32x4_next_u32s
+  RVA: 0x18FD0
+}
+Export {
+  Ordinal: 101
+  Name: sfc32x4_rand_f32s
+  RVA: 0x190E0
+}
+Export {
+  Ordinal: 102
+  Name: sfc32x4_rand_i32s
+  RVA: 0x19520
+}
+Export {
+  Ordinal: 103
+  Name: sfc32x8_free
+  RVA: 0xFF60
+}
+Export {
+  Ordinal: 104
+  Name: sfc32x8_new
+  RVA: 0x197E0
+}
+Export {
+  Ordinal: 105
+  Name: sfc32x8_next_f32s
+  RVA: 0x198A0
+}
+Export {
+  Ordinal: 106
+  Name: sfc32x8_next_u32s
+  RVA: 0x199C0
+}
+Export {
+  Ordinal: 107
+  Name: sfc32x8_rand_f32s
+  RVA: 0x19AB0
+}
+Export {
+  Ordinal: 108
+  Name: sfc32x8_rand_i32s
+  RVA: 0x19FE0
+}
+Export {
+  Ordinal: 109
+  Name: sfc64_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 110
+  Name: sfc64_new
+  RVA: 0x1A230
+}
+Export {
+  Ordinal: 111
+  Name: sfc64_next_f64s
+  RVA: 0x1A340
+}
+Export {
+  Ordinal: 112
+  Name: sfc64_next_u64s
+  RVA: 0x1A440
+}
+Export {
+  Ordinal: 113
+  Name: sfc64_rand_f64s
+  RVA: 0x1A520
+}
+Export {
+  Ordinal: 114
+  Name: sfc64_rand_i64s
+  RVA: 0x1AAB0
+}
+Export {
+  Ordinal: 115
+  Name: sfc64x8_free
+  RVA: 0x10B70
+}
+Export {
+  Ordinal: 116
+  Name: sfc64x8_new
+  RVA: 0x1AD40
+}
+Export {
+  Ordinal: 117
+  Name: sfc64x8_next_u64s
+  RVA: 0x1B790
+}
+Export {
+  Ordinal: 118
+  Name: sfmt11213_free
+  RVA: 0x1B890
+}
+Export {
+  Ordinal: 119
+  Name: sfmt11213_new
+  RVA: 0x1B8B0
+}
+Export {
+  Ordinal: 120
+  Name: sfmt11213_next_f32s
+  RVA: 0x1B930
+}
+Export {
+  Ordinal: 121
+  Name: sfmt11213_next_u32s
+  RVA: 0x1BA50
+}
+Export {
+  Ordinal: 122
+  Name: sfmt11213_rand_f32s
+  RVA: 0x1BB50
+}
+Export {
+  Ordinal: 123
+  Name: sfmt11213_rand_i32s
+  RVA: 0x1C0D0
+}
+Export {
+  Ordinal: 124
+  Name: sfmt1279_free
+  RVA: 0x1C330
+}
+Export {
+  Ordinal: 125
+  Name: sfmt1279_new
+  RVA: 0x1C350
+}
+Export {
+  Ordinal: 126
+  Name: sfmt1279_next_f32s
+  RVA: 0x1C3D0
+}
+Export {
+  Ordinal: 127
+  Name: sfmt1279_next_u32s
+  RVA: 0x1C4F0
+}
+Export {
+  Ordinal: 128
+  Name: sfmt1279_rand_f32s
+  RVA: 0x1C5F0
+}
+Export {
+  Ordinal: 129
+  Name: sfmt1279_rand_i32s
+  RVA: 0x1CB60
+}
+Export {
+  Ordinal: 130
+  Name: sfmt132049_free
+  RVA: 0x1CDC0
+}
+Export {
+  Ordinal: 131
+  Name: sfmt132049_new
+  RVA: 0x1CDE0
+}
+Export {
+  Ordinal: 132
+  Name: sfmt132049_next_f32s
+  RVA: 0x1CE60
+}
+Export {
+  Ordinal: 133
+  Name: sfmt132049_next_u32s
+  RVA: 0x1CF80
+}
+Export {
+  Ordinal: 134
+  Name: sfmt132049_rand_f32s
+  RVA: 0x1D080
+}
+Export {
+  Ordinal: 135
+  Name: sfmt132049_rand_i32s
+  RVA: 0x1D600
+}
+Export {
+  Ordinal: 136
+  Name: sfmt1993764_free
+  RVA: 0x12270
+}
+Export {
+  Ordinal: 137
+  Name: sfmt1993764_new
+  RVA: 0x1D860
+}
+Export {
+  Ordinal: 138
+  Name: sfmt1993764_next_f64s
+  RVA: 0x1D8F0
+}
+Export {
+  Ordinal: 139
+  Name: sfmt1993764_next_u64s
+  RVA: 0x1DA10
+}
+Export {
+  Ordinal: 140
+  Name: sfmt1993764_rand_i64s
+  RVA: 0x1DB10
+}
+Export {
+  Ordinal: 141
+  Name: sfmt19937_free
+  RVA: 0x1DDA0
+}
+Export {
+  Ordinal: 142
+  Name: sfmt19937_new
+  RVA: 0x1DDC0
+}
+Export {
+  Ordinal: 143
+  Name: sfmt19937_next_f32s
+  RVA: 0x1DE40
+}
+Export {
+  Ordinal: 144
+  Name: sfmt19937_next_u32s
+  RVA: 0x1DF60
+}
+Export {
+  Ordinal: 145
+  Name: sfmt19937_rand_f32s
+  RVA: 0x1E060
+}
+Export {
+  Ordinal: 146
+  Name: sfmt19937_rand_i32s
+  RVA: 0x1E5E0
+}
+Export {
+  Ordinal: 147
+  Name: sfmt216091_free
+  RVA: 0x1E840
+}
+Export {
+  Ordinal: 148
+  Name: sfmt216091_new
+  RVA: 0x1E860
+}
+Export {
+  Ordinal: 149
+  Name: sfmt216091_next_f32s
+  RVA: 0x1E8E0
+}
+Export {
+  Ordinal: 150
+  Name: sfmt216091_next_u32s
+  RVA: 0x1EA00
+}
+Export {
+  Ordinal: 151
+  Name: sfmt216091_rand_f32s
+  RVA: 0x1EB00
+}
+Export {
+  Ordinal: 152
+  Name: sfmt216091_rand_i32s
+  RVA: 0x1F080
+}
+Export {
+  Ordinal: 153
+  Name: sfmt2281_free
+  RVA: 0x1F2E0
+}
+Export {
+  Ordinal: 154
+  Name: sfmt2281_new
+  RVA: 0x1F300
+}
+Export {
+  Ordinal: 155
+  Name: sfmt2281_next_f32s
+  RVA: 0x1F380
+}
+Export {
+  Ordinal: 156
+  Name: sfmt2281_next_u32s
+  RVA: 0x1F4A0
+}
+Export {
+  Ordinal: 157
+  Name: sfmt2281_rand_f32s
+  RVA: 0x1F5A0
+}
+Export {
+  Ordinal: 158
+  Name: sfmt2281_rand_i32s
+  RVA: 0x1FB10
+}
+Export {
+  Ordinal: 159
+  Name: sfmt4253_free
+  RVA: 0x1FD70
+}
+Export {
+  Ordinal: 160
+  Name: sfmt4253_new
+  RVA: 0x1FD90
+}
+Export {
+  Ordinal: 161
+  Name: sfmt4253_next_f32s
+  RVA: 0x1FE10
+}
+Export {
+  Ordinal: 162
+  Name: sfmt4253_next_u32s
+  RVA: 0x1FF30
+}
+Export {
+  Ordinal: 163
+  Name: sfmt4253_rand_f32s
+  RVA: 0x20030
+}
+Export {
+  Ordinal: 164
+  Name: sfmt4253_rand_i32s
+  RVA: 0x205B0
+}
+Export {
+  Ordinal: 165
+  Name: sfmt44497_free
+  RVA: 0x20810
+}
+Export {
+  Ordinal: 166
+  Name: sfmt44497_new
+  RVA: 0x20830
+}
+Export {
+  Ordinal: 167
+  Name: sfmt44497_next_f32s
+  RVA: 0x208B0
+}
+Export {
+  Ordinal: 168
+  Name: sfmt44497_next_u32s
+  RVA: 0x209D0
+}
+Export {
+  Ordinal: 169
+  Name: sfmt44497_rand_f32s
+  RVA: 0x20AD0
+}
+Export {
+  Ordinal: 170
+  Name: sfmt44497_rand_i32s
+  RVA: 0x21050
+}
+Export {
+  Ordinal: 171
+  Name: sfmt607_free
+  RVA: 0x212B0
+}
+Export {
+  Ordinal: 172
+  Name: sfmt607_new
+  RVA: 0x212D0
+}
+Export {
+  Ordinal: 173
+  Name: sfmt607_next_f32s
+  RVA: 0x21360
+}
+Export {
+  Ordinal: 174
+  Name: sfmt607_next_u32s
+  RVA: 0x21460
+}
+Export {
+  Ordinal: 175
+  Name: sfmt607_rand_f32s
+  RVA: 0x21540
+}
+Export {
+  Ordinal: 176
+  Name: sfmt607_rand_i32s
+  RVA: 0x21A40
+}
+Export {
+  Ordinal: 177
+  Name: sfmt86243_free
+  RVA: 0x21C60
+}
+Export {
+  Ordinal: 178
+  Name: sfmt86243_new
+  RVA: 0x21C80
+}
+Export {
+  Ordinal: 179
+  Name: sfmt86243_next_f32s
+  RVA: 0x21D00
+}
+Export {
+  Ordinal: 180
+  Name: sfmt86243_next_u32s
+  RVA: 0x21E20
+}
+Export {
+  Ordinal: 181
+  Name: sfmt86243_rand_f32s
+  RVA: 0x21F20
+}
+Export {
+  Ordinal: 182
+  Name: sfmt86243_rand_i32s
+  RVA: 0x224A0
+}
+Export {
+  Ordinal: 183
+  Name: sfmt_rand_f64s
+  RVA: 0x22700
+}
+Export {
+  Ordinal: 184
+  Name: splitmix32_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 185
+  Name: splitmix32_new
+  RVA: 0x22D00
+}
+Export {
+  Ordinal: 186
+  Name: splitmix32_next_f32s
+  RVA: 0x22D50
+}
+Export {
+  Ordinal: 187
+  Name: splitmix32_next_u32s
+  RVA: 0x22E50
+}
+Export {
+  Ordinal: 188
+  Name: splitmix32_rand_f32s
+  RVA: 0x22F30
+}
+Export {
+  Ordinal: 189
+  Name: splitmix32_rand_i32s
+  RVA: 0x23430
+}
+Export {
+  Ordinal: 190
+  Name: splitmix32x16_free
+  RVA: 0xFF60
+}
+Export {
+  Ordinal: 191
+  Name: splitmix32x16_new
+  RVA: 0x23690
+}
+Export {
+  Ordinal: 192
+  Name: splitmix32x16_next_u32s
+  RVA: 0x23790
+}
+Export {
+  Ordinal: 193
+  Name: splitmix64_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 194
+  Name: splitmix64_new
+  RVA: 0x23890
+}
+Export {
+  Ordinal: 195
+  Name: splitmix64_next_f64s
+  RVA: 0x238E0
+}
+Export {
+  Ordinal: 196
+  Name: splitmix64_next_u64s
+  RVA: 0x239F0
+}
+Export {
+  Ordinal: 197
+  Name: splitmix64_rand_f64s
+  RVA: 0x23AE0
+}
+Export {
+  Ordinal: 198
+  Name: splitmix64_rand_i64s
+  RVA: 0x24090
+}
+Export {
+  Ordinal: 199
+  Name: squares32_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 200
+  Name: squares32_new
+  RVA: 0x24350
+}
+Export {
+  Ordinal: 201
+  Name: squares32_next_f32s
+  RVA: 0x24460
+}
+Export {
+  Ordinal: 202
+  Name: squares32_next_u32s
+  RVA: 0x24550
+}
+Export {
+  Ordinal: 203
+  Name: squares32_rand_f32s
+  RVA: 0x24630
+}
+Export {
+  Ordinal: 204
+  Name: squares32_rand_i32s
+  RVA: 0x24B60
+}
+Export {
+  Ordinal: 205
+  Name: squares32x8_free
+  RVA: 0xFF60
+}
+Export {
+  Ordinal: 206
+  Name: squares32x8_new
+  RVA: 0x24E00
+}
+Export {
+  Ordinal: 207
+  Name: squares32x8_next_f32s
+  RVA: 0x24EE0
+}
+Export {
+  Ordinal: 208
+  Name: squares32x8_next_u32s
+  RVA: 0x24FF0
+}
+Export {
+  Ordinal: 209
+  Name: squares32x8_rand_f32s
+  RVA: 0x250D0
+}
+Export {
+  Ordinal: 210
+  Name: squares32x8_rand_i32s
+  RVA: 0x255E0
+}
+Export {
+  Ordinal: 211
+  Name: threefish256_free
+  RVA: 0x16160
+}
+Export {
+  Ordinal: 212
+  Name: threefish256_new
+  RVA: 0x257E0
+}
+Export {
+  Ordinal: 213
+  Name: threefish256_next_f64s
+  RVA: 0x259E0
+}
+Export {
+  Ordinal: 214
+  Name: threefish256_next_u64s
+  RVA: 0x25AD0
+}
+Export {
+  Ordinal: 215
+  Name: threefish256_rand_f64s
+  RVA: 0x25B80
+}
+Export {
+  Ordinal: 216
+  Name: threefish256_rand_i64s
+  RVA: 0x26130
+}
+Export {
+  Ordinal: 217
+  Name: threefry32x2_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 218
+  Name: threefry32x2_new
+  RVA: 0x264C0
+}
+Export {
+  Ordinal: 219
+  Name: threefry32x2_next_f32s
+  RVA: 0x265A0
+}
+Export {
+  Ordinal: 220
+  Name: threefry32x2_next_u32s
+  RVA: 0x26660
+}
+Export {
+  Ordinal: 221
+  Name: threefry32x2_rand_i32s
+  RVA: 0x26710
+}
+Export {
+  Ordinal: 222
+  Name: threefry32x4_free
+  RVA: 0xFF60
+}
+Export {
+  Ordinal: 223
+  Name: threefry32x4_new
+  RVA: 0x26B80
+}
+Export {
+  Ordinal: 224
+  Name: threefry32x4_next_f32s
+  RVA: 0x26D40
+}
+Export {
+  Ordinal: 225
+  Name: threefry32x4_next_u32s
+  RVA: 0x26E20
+}
+Export {
+  Ordinal: 226
+  Name: threefry32x4_rand_f32s
+  RVA: 0x26ED0
+}
+Export {
+  Ordinal: 227
+  Name: threefry32x4_rand_i32s
+  RVA: 0x273E0
+}
+Export {
+  Ordinal: 228
+  Name: twisted_gfsr_free
+  RVA: 0xFF60
+}
+Export {
+  Ordinal: 229
+  Name: twisted_gfsr_new
+  RVA: 0x275C0
+}
+Export {
+  Ordinal: 230
+  Name: twisted_gfsr_next_f64s
+  RVA: 0x278E0
+}
+Export {
+  Ordinal: 231
+  Name: twisted_gfsr_next_u64s
+  RVA: 0x279F0
+}
+Export {
+  Ordinal: 232
+  Name: twisted_gfsr_rand_f64s
+  RVA: 0x27AC0
+}
+Export {
+  Ordinal: 233
+  Name: twisted_gfsr_rand_i64s
+  RVA: 0x28030
+}
+Export {
+  Ordinal: 234
+  Name: xoroshiro128pp_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 235
+  Name: xoroshiro128pp_new
+  RVA: 0x28260
+}
+Export {
+  Ordinal: 236
+  Name: xoroshiro128pp_next_f64s
+  RVA: 0x28330
+}
+Export {
+  Ordinal: 237
+  Name: xoroshiro128pp_next_u64s
+  RVA: 0x28420
+}
+Export {
+  Ordinal: 238
+  Name: xoroshiro128pp_rand_f64s
+  RVA: 0x284F0
+}
+Export {
+  Ordinal: 239
+  Name: xoroshiro128pp_rand_i64s
+  RVA: 0x28A40
+}
+Export {
+  Ordinal: 240
+  Name: xoroshiro128ss_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 241
+  Name: xoroshiro128ss_new
+  RVA: 0x28260
+}
+Export {
+  Ordinal: 242
+  Name: xoroshiro128ss_next_f64s
+  RVA: 0x28C80
+}
+Export {
+  Ordinal: 243
+  Name: xoroshiro128ss_next_u64s
+  RVA: 0x28D70
+}
+Export {
+  Ordinal: 244
+  Name: xoroshiro128ss_rand_f64s
+  RVA: 0x28E40
+}
+Export {
+  Ordinal: 245
+  Name: xoroshiro128ss_rand_i64s
+  RVA: 0x293A0
+}
+Export {
+  Ordinal: 246
+  Name: xoroshiro64ss_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 247
+  Name: xoroshiro64ss_new
+  RVA: 0x295E0
+}
+Export {
+  Ordinal: 248
+  Name: xoroshiro64ss_next_f32s
+  RVA: 0x296A0
+}
+Export {
+  Ordinal: 249
+  Name: xoroshiro64ss_next_u32s
+  RVA: 0x29780
+}
+Export {
+  Ordinal: 250
+  Name: xoroshiro64ss_rand_f32s
+  RVA: 0x29850
+}
+Export {
+  Ordinal: 251
+  Name: xoroshiro64ss_rand_i32s
+  RVA: 0x29D20
+}
+Export {
+  Ordinal: 252
+  Name: xoroshiro64ssx16_free
+  RVA: 0x16160
+}
+Export {
+  Ordinal: 253
+  Name: xoroshiro64ssx16_new
+  RVA: 0x29F60
+}
+Export {
+  Ordinal: 254
+  Name: xoroshiro64ssx16_next_f32s
+  RVA: 0x2A030
+}
+Export {
+  Ordinal: 255
+  Name: xoroshiro64ssx16_next_u32s
+  RVA: 0x2A160
+}
+Export {
+  Ordinal: 256
+  Name: xoroshiro64ssx16_rand_f32s
+  RVA: 0x2A270
+}
+Export {
+  Ordinal: 257
+  Name: xoroshiro64ssx16_rand_i32s
+  RVA: 0x2A820
+}
+Export {
+  Ordinal: 258
+  Name: xoroshiro64ssx8_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 259
+  Name: xoroshiro64ssx8_new
+  RVA: 0x2AAA0
+}
+Export {
+  Ordinal: 260
+  Name: xoroshiro64ssx8_next_f32s
+  RVA: 0x2AB80
+}
+Export {
+  Ordinal: 261
+  Name: xoroshiro64ssx8_next_u32s
+  RVA: 0x2AC80
+}
+Export {
+  Ordinal: 262
+  Name: xoroshiro64ssx8_rand_f32s
+  RVA: 0x2AD50
+}
+Export {
+  Ordinal: 263
+  Name: xoroshiro64ssx8_rand_i32s
+  RVA: 0x2B230
+}
+Export {
+  Ordinal: 264
+  Name: xorshift128_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 265
+  Name: xorshift128_new
+  RVA: 0x2B460
+}
+Export {
+  Ordinal: 266
+  Name: xorshift128_next_f32s
+  RVA: 0x2B580
+}
+Export {
+  Ordinal: 267
+  Name: xorshift128_next_u32s
+  RVA: 0x2B660
+}
+Export {
+  Ordinal: 268
+  Name: xorshift128_rand_f32s
+  RVA: 0x2B730
+}
+Export {
+  Ordinal: 269
+  Name: xorshift128_rand_i32s
+  RVA: 0x2BC10
+}
+Export {
+  Ordinal: 270
+  Name: xorshift32_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 271
+  Name: xorshift32_new
+  RVA: 0x2BE60
+}
+Export {
+  Ordinal: 272
+  Name: xorshift32_next_f32s
+  RVA: 0x2BEF0
+}
+Export {
+  Ordinal: 273
+  Name: xorshift32_next_u32s
+  RVA: 0x2BFC0
+}
+Export {
+  Ordinal: 274
+  Name: xorshift32_rand_f32s
+  RVA: 0x2C070
+}
+Export {
+  Ordinal: 275
+  Name: xorshift32_rand_i32s
+  RVA: 0x2C4E0
+}
+Export {
+  Ordinal: 276
+  Name: xorshift64_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 277
+  Name: xorshift64_new
+  RVA: 0x2C6E0
+}
+Export {
+  Ordinal: 278
+  Name: xorshift64_next_f64s
+  RVA: 0x2C780
+}
+Export {
+  Ordinal: 279
+  Name: xorshift64_next_u64s
+  RVA: 0x2C860
+}
+Export {
+  Ordinal: 280
+  Name: xorshift64_rand_f64s
+  RVA: 0x2C910
+}
+Export {
+  Ordinal: 281
+  Name: xorshift64_rand_i64s
+  RVA: 0x2CE10
+}
+Export {
+  Ordinal: 282
+  Name: xoshiro128pp_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 283
+  Name: xoshiro128pp_new
+  RVA: 0x2B460
+}
+Export {
+  Ordinal: 284
+  Name: xoshiro128pp_next_f32s
+  RVA: 0x2D030
+}
+Export {
+  Ordinal: 285
+  Name: xoshiro128pp_next_u32s
+  RVA: 0x2D130
+}
+Export {
+  Ordinal: 286
+  Name: xoshiro128pp_rand_f32s
+  RVA: 0x2D210
+}
+Export {
+  Ordinal: 287
+  Name: xoshiro128pp_rand_i32s
+  RVA: 0x2D730
+}
+Export {
+  Ordinal: 288
+  Name: xoshiro128ppx16_free
+  RVA: 0x10B70
+}
+Export {
+  Ordinal: 289
+  Name: xoshiro128ppx16_new
+  RVA: 0x2D9A0
+}
+Export {
+  Ordinal: 290
+  Name: xoshiro128ppx16_next_f32s
+  RVA: 0x2DA70
+}
+Export {
+  Ordinal: 291
+  Name: xoshiro128ppx16_next_u32s
+  RVA: 0x2DBA0
+}
+Export {
+  Ordinal: 292
+  Name: xoshiro128ppx16_rand_f32s
+  RVA: 0x2DCB0
+}
+Export {
+  Ordinal: 293
+  Name: xoshiro128ppx16_rand_i32s
+  RVA: 0x2E260
+}
+Export {
+  Ordinal: 294
+  Name: xoshiro128ss_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 295
+  Name: xoshiro128ss_new
+  RVA: 0x2B460
+}
+Export {
+  Ordinal: 296
+  Name: xoshiro128ss_next_f32s
+  RVA: 0x2E4E0
+}
+Export {
+  Ordinal: 297
+  Name: xoshiro128ss_next_u32s
+  RVA: 0x2E5E0
+}
+Export {
+  Ordinal: 298
+  Name: xoshiro128ss_rand_f32s
+  RVA: 0x2E6C0
+}
+Export {
+  Ordinal: 299
+  Name: xoshiro128ss_rand_i32s
+  RVA: 0x2EBE0
+}
+Export {
+  Ordinal: 300
+  Name: xoshiro128ssx16_free
+  RVA: 0x10B70
+}
+Export {
+  Ordinal: 301
+  Name: xoshiro128ssx16_new
+  RVA: 0x2D9A0
+}
+Export {
+  Ordinal: 302
+  Name: xoshiro128ssx16_next_f32s
+  RVA: 0x2EE50
+}
+Export {
+  Ordinal: 303
+  Name: xoshiro128ssx16_next_u32s
+  RVA: 0x2EF80
+}
+Export {
+  Ordinal: 304
+  Name: xoshiro128ssx16_rand_f32s
+  RVA: 0x2F090
+}
+Export {
+  Ordinal: 305
+  Name: xoshiro128ssx16_rand_i32s
+  RVA: 0x2F640
+}
+Export {
+  Ordinal: 306
+  Name: xoshiro256pp_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 307
+  Name: xoshiro256pp_new
+  RVA: 0xE8F0
+}
+Export {
+  Ordinal: 308
+  Name: xoshiro256pp_next_f64s
+  RVA: 0x2F8C0
+}
+Export {
+  Ordinal: 309
+  Name: xoshiro256pp_next_u64s
+  RVA: 0x2F9D0
+}
+Export {
+  Ordinal: 310
+  Name: xoshiro256pp_rand_f64s
+  RVA: 0x2FAB0
+}
+Export {
+  Ordinal: 311
+  Name: xoshiro256pp_rand_i64s
+  RVA: 0x30060
+}
+Export {
+  Ordinal: 312
+  Name: xoshiro256ss_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 313
+  Name: xoshiro256ss_new
+  RVA: 0xE8F0
+}
+Export {
+  Ordinal: 314
+  Name: xoshiro256ss_next_f64s
+  RVA: 0x302E0
+}
+Export {
+  Ordinal: 315
+  Name: xoshiro256ss_next_u64s
+  RVA: 0x303F0
+}
+Export {
+  Ordinal: 316
+  Name: xoshiro256ss_rand_f64s
+  RVA: 0x304D0
+}
+Export {
+  Ordinal: 317
+  Name: xoshiro256ss_rand_i64s
+  RVA: 0x30A80
+}
+Export {
+  Ordinal: 318
+  Name: xoshiro256ssx2_free
+  RVA: 0xC9E0
+}
+Export {
+  Ordinal: 319
+  Name: xoshiro256ssx2_new
+  RVA: 0x30D00
+}
+Export {
+  Ordinal: 320
+  Name: xoshiro256ssx2_next_u64s
+  RVA: 0x30F90
+}

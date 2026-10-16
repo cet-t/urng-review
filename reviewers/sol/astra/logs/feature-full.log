@@ -1,0 +1,5 @@
+COMMAND: cargo check --offline --lib --features full
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\astra\work)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.99s
+
+EXIT: 0

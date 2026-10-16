@@ -1,0 +1,28 @@
+COMMAND: cargo build --offline --release --features full
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.46
+   Compiling unicode-ident v1.0.24
+   Compiling memchr v2.8.3
+   Compiling crossbeam-utils v0.8.22
+   Compiling crossbeam-epoch v0.9.20
+   Compiling regex-syntax v0.8.11
+   Compiling crossbeam-deque v0.8.7
+   Compiling rayon-core v1.13.0
+   Compiling pastey v0.2.3
+   Compiling either v1.16.0
+   Compiling rand_core v0.10.1
+   Compiling aho-corasick v1.1.4
+   Compiling regex-automata v0.4.15
+   Compiling wrapn v0.10.0
+   Compiling regex v1.13.0
+   Compiling syn v2.0.118
+   Compiling rayon v1.12.0
+   Compiling csbindgen v1.9.8
+   Compiling bytemuck_derive v1.10.2
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\astra\work)
+   Compiling bytemuck v1.25.0
+   Compiling safe_arch v1.0.0
+   Compiling wide v1.5.0
+    Finished `release` profile [optimized] target(s) in 19.20s
+
+EXIT: 0
