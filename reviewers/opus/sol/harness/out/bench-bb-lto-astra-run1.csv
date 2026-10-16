@@ -1,0 +1,4 @@
+﻿rust::Sfc32::randi(bb 0,999),ns/word,4.4914,3.6590,12.3769
+rust::Xoshiro256Pp::randi(bb 0,999),ns/word,4.5694,3.6065,9.5402
+rust::Sfc32::randf(bb 0,1),ns/word,2.8146,2.2107,4.9303
+rust::Xoshiro256Pp::randf(bb -1,1),ns/word,4.4930,3.0543,45.5710

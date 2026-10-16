@@ -1,0 +1,6 @@
+﻿philox32x4x4     100 words at 16 different 4-byte offsets identical: true
+sfc32x16         100 words at 16 different 4-byte offsets identical: true
+xoshiro128ppx16  100 words at 16 different 4-byte offsets identical: true
+pcg32x8          100 words at 16 different 4-byte offsets identical: true
+philox32         100 words at 16 different 4-byte offsets identical: true
+mt19937          100 words at 16 different 4-byte offsets identical: true

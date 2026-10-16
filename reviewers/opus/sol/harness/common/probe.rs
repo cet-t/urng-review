@@ -172,8 +172,40 @@ fn threefry_wrap() {
     println!("  after  = {:08x?}", again);
 }
 
+/// C ABI: is a fill independent of the (naturally aligned) output address?
+/// Fills 100 words at u32 offsets 0..16 inside one buffer from fresh handles.
+fn addr_offsets() {
+    macro_rules! check {
+        ($tag:literal, $new:ident, $fill:ident, $free:ident, $seed:expr) => {{
+            let mut reference: Option<Vec<u32>> = None;
+            let mut same = true;
+            for off in 0..16usize {
+                let mut buf = vec![0u32; 100 + 16];
+                unsafe {
+                    let h = $new($seed);
+                    $fill(h, buf.as_mut_ptr().add(off), 100);
+                    $free(h);
+                }
+                let v = buf[off..off + 100].to_vec();
+                match &reference {
+                    None => reference = Some(v),
+                    Some(r) => same &= *r == v,
+                }
+            }
+            println!("{:<16} 100 words at 16 different 4-byte offsets identical: {}", $tag, same);
+        }};
+    }
+    check!("philox32x4x4", philox32x4x4_new, philox32x4x4_next_u32s, philox32x4x4_free, 5);
+    check!("sfc32x16", sfc32x16_new, sfc32x16_next_u32s, sfc32x16_free, 5);
+    check!("xoshiro128ppx16", xoshiro128ppx16_new, xoshiro128ppx16_next_u32s, xoshiro128ppx16_free, 5);
+    check!("pcg32x8", pcg32x8_new, pcg32x8_next_u32s, pcg32x8_free, 5);
+    check!("philox32", philox32_new, philox32_next_u32s, philox32_free, 5);
+    check!("mt19937", mt19937_new, mt19937_next_u32s, mt19937_free, 5);
+}
+
 fn main() {
     match std::env::args().nth(1).as_deref() {
+        Some("addr_offsets") => addr_offsets(),
         Some("threefry_wrap") => threefry_wrap(),
         Some("seed_pairs") => seed_pairs(),
         Some("xorshift32_zero") => xorshift32_zero(),

@@ -73,6 +73,24 @@ fn main() {
         let mut r = Xoshiro256Pp::new(1);
         measure("rust::Xoshiro256Pp::randf(0,1)", 1024, || { let mut a = 0f64; for _ in 0..1024 { a += r.randf(0.0, 1.0); } a.to_bits() })
     }
+    // Same draws with bounds hidden from the optimizer (runtime-variable ranges,
+    // as in shuffle/samplers or user code): validation/threshold cannot be folded.
+    if "rust::Sfc32::randi(bb 0,999)".contains(filter) {
+        let mut r = Sfc32::new(1);
+        measure("rust::Sfc32::randi(bb 0,999)", 1024, || { let mut a = 0u64; for _ in 0..1024 { a = a.wrapping_add(r.randi(black_box(0), black_box(999)) as u64); } a });
+    }
+    if "rust::Xoshiro256Pp::randi(bb 0,999)".contains(filter) {
+        let mut r = Xoshiro256Pp::new(1);
+        measure("rust::Xoshiro256Pp::randi(bb 0,999)", 1024, || { let mut a = 0u64; for _ in 0..1024 { a = a.wrapping_add(r.randi(black_box(0), black_box(999)) as u64); } a });
+    }
+    if "rust::Sfc32::randf(bb 0,1)".contains(filter) {
+        let mut r = Sfc32::new(1);
+        measure("rust::Sfc32::randf(bb 0,1)", 1024, || { let mut a = 0f32; for _ in 0..1024 { a += r.randf(black_box(0.0), black_box(1.0)); } a.to_bits() as u64 });
+    }
+    if "rust::Xoshiro256Pp::randf(bb -1,1)".contains(filter) {
+        let mut r = Xoshiro256Pp::new(1);
+        measure("rust::Xoshiro256Pp::randf(bb -1,1)", 1024, || { let mut a = 0f64; for _ in 0..1024 { a += r.randf(black_box(-1.0), black_box(1.0)); } a.to_bits() });
+    }
     if "rust::Sfc32::nextf".contains(filter) {
         let mut r = Sfc32::new(1);
         measure("rust::Sfc32::nextf", 1024, || { let mut a = 0f32; for _ in 0..1024 { a += r.nextf(); } a.to_bits() as u64 });
