@@ -1,0 +1,205 @@
+cwd: D:\.repo\urng-review\reviewers\astra\sol\work\source
+command: ["cargo", "build", "--offline", "--release", "--all-features", "--example", "astra_bench"]
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.46
+   Compiling unicode-ident v1.0.24
+   Compiling cfg-if v1.0.4
+   Compiling windows-link v0.2.1
+   Compiling autocfg v1.5.1
+   Compiling semver v1.0.28
+   Compiling crossbeam-utils v0.8.22
+   Compiling serde_core v1.0.229
+   Compiling crc32fast v1.5.0
+   Compiling winapi v0.3.9
+   Compiling simd-adler32 v0.3.9
+   Compiling crossbeam-epoch v0.9.20
+   Compiling adler2 v2.0.1
+   Compiling memchr v2.8.3
+   Compiling libc v0.2.186
+   Compiling rustc_version v0.4.1
+   Compiling windows-sys v0.61.2
+   Compiling aho-corasick v1.1.4
+   Compiling miniz_oxide v0.8.9
+   Compiling crossbeam-deque v0.8.7
+   Compiling regex-syntax v0.8.11
+   Compiling zerocopy v0.8.54
+   Compiling num-traits v0.2.19
+   Compiling fdeflate v0.3.7
+   Compiling serde v1.0.229
+   Compiling pathfinder_simd v0.5.6
+   Compiling find-msvc-tools v0.1.9
+   Compiling syn v2.0.118
+   Compiling syn v3.0.0
+   Compiling winapi-util v0.1.11
+   Compiling flate2 v1.1.9
+   Compiling bitflags v1.3.2
+   Compiling byteorder v1.5.0
+   Compiling color_quant v1.1.0
+   Compiling regex-automata v0.4.15
+   Compiling rayon-core v1.13.0
+   Compiling zmij v1.0.23
+   Compiling shlex v2.0.1
+   Compiling either v1.16.0
+   Compiling cc v1.2.66
+   Compiling png v0.17.16
+   Compiling same-file v1.0.6
+   Compiling jpeg-decoder v0.3.2
+   Compiling itoa v1.0.18
+   Compiling log v0.4.33
+   Compiling font-kit v0.14.3
+   Compiling wio v0.2.2
+   Compiling serde_json v1.0.150
+   Compiling lazy_static v1.5.0
+   Compiling weezl v0.1.12
+   Compiling plotters-backend v0.3.7
+   Compiling regex v1.13.0
+   Compiling dwrote v0.11.5
+   Compiling pathfinder_geometry v0.5.1
+   Compiling walkdir v2.5.0
+   Compiling csbindgen v1.9.8
+   Compiling gif v0.12.0
+   Compiling anstyle v1.0.14
+   Compiling thiserror v2.0.18
+   Compiling alloca v0.4.0
+   Compiling float-ord v0.3.2
+   Compiling rand_core v0.10.1
+   Compiling ciborium-io v0.2.2
+   Compiling clap_lex v1.1.0
+   Compiling bitflags v2.13.0
+   Compiling rayon v1.12.0
+   Compiling clap_builder v4.6.2
+   Compiling plotters-svg v0.3.7
+   Compiling serde_derive v1.0.229
+   Compiling chrono v0.4.45
+   Compiling itertools v0.13.0
+   Compiling csv-core v0.1.13
+   Compiling ttf-parser v0.20.0
+   Compiling ryu v1.0.23
+   Compiling cast v0.3.0
+   Compiling pastey v0.2.3
+   Compiling anyhow v1.0.104
+   Compiling criterion-plot v0.8.2
+   Compiling csv v1.4.0
+   Compiling bytemuck_derive v1.10.2
+   Compiling zerocopy-derive v0.8.54
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\sol\work\source)
+   Compiling thiserror-impl v2.0.18
+   Compiling clap v4.6.2
+   Compiling page_size v0.6.0
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling rand v0.10.2
+   Compiling wrapn v0.10.0
+   Compiling rand_sfc v0.2.0
+   Compiling colored v3.1.1
+   Compiling thousands v0.2.0
+   Compiling bytemuck v1.25.0
+   Compiling image v0.24.9
+   Compiling safe_arch v1.0.0
+   Compiling tinytemplate v1.2.1
+   Compiling wide v1.5.0
+   Compiling plotters-bitmap v0.3.7
+   Compiling plotters v0.3.7
+   Compiling half v2.7.1
+   Compiling ciborium-ll v0.2.2
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.8.2
+warning: constant `PCG32X8_PAR_CHUNK` is never used
+  --> src\prng\b32\pcg.rs:62:15
+   |
+62 |     pub const PCG32X8_PAR_CHUNK: usize = 131_072;
+   |               ^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `PCG32X8_PAR_CHUNK_BLOCKS` is never used
+  --> src\prng\b32\pcg.rs:63:15
+   |
+63 |     pub const PCG32X8_PAR_CHUNK_BLOCKS: u64 = (PCG32X8_PAR_CHUNK / PCG32X8_LANE) as u64;
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PCG32_MULT` is never used
+  --> src\prng\b32\pcg.rs:64:15
+   |
+64 |     pub const PCG32_MULT: u64 = 6364136223846793005;
+   |               ^^^^^^^^^^
+
+warning: methods `nextfv`, `randiv`, and `randfv` are never used
+   --> src\prng\b32\sfc.rs:119:23
+    |
+ 80 |     impl Sfc32x4 {
+    |     ------------ methods in this implementation
+...
+119 |         pub(crate) fn nextfv(&mut self) -> __m128 {
+    |                       ^^^^^^
+...
+124 |         pub(crate) fn randiv(&mut self, v_range: __m128i, v_min: __m128i) -> __m128i {
+    |                       ^^^^^^
+...
+138 |         pub(crate) fn randfv(&mut self, v_mult: __m128, v_min: __m128) -> __m128 {
+    |                       ^^^^^^
+
+warning: methods `nextfv`, `randiv`, and `randfv` are never used
+   --> src\prng\b32\sfc.rs:227:30
+    |
+178 |     impl Sfc32x8 {
+    |     ------------ methods in this implementation
+...
+227 |         pub(crate) unsafe fn nextfv(&mut self) -> __m256 {
+    |                              ^^^^^^
+...
+233 |         pub(crate) unsafe fn randiv(&mut self, v_range: __m256i, v_min: __m256i) -> __m256i {
+    |                              ^^^^^^
+...
+244 |         pub(crate) unsafe fn randfv(&mut self, v_mult: __m256, v_min: __m256) -> __m256 {
+    |                              ^^^^^^
+
+warning: methods `nextfv`, `randiv`, and `randfv` are never used
+   --> src\prng\b32\sfc.rs:334:30
+    |
+288 |     impl Sfc32x16 {
+    |     ------------- methods in this implementation
+...
+334 |         pub(crate) unsafe fn nextfv(&mut self) -> __m512 {
+    |                              ^^^^^^
+...
+340 |         pub(crate) unsafe fn randiv(&mut self, v_range: __m512i, v_min: __m512i) -> __m512i {
+    |                              ^^^^^^
+...
+353 |         pub(crate) unsafe fn randfv(&mut self, v_mult: __m512, v_min: __m512) -> __m512 {
+    |                              ^^^^^^
+
+warning: constant `SPLITMIX32X16_PAR_CHUNK` is never used
+  --> src\prng\b32\splitmix.rs:72:15
+   |
+72 |     pub const SPLITMIX32X16_PAR_CHUNK: usize = 8192;
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x4x4_PAR_CHUNK` is never used
+   --> src\cbrng\b32\philox.rs:106:11
+    |
+106 | pub const PHILOX32x4x4_PAR_CHUNK: usize = 131_072;
+    |           ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x4x4_CHUNK_RATIO` is never used
+   --> src\cbrng\b32\philox.rs:109:11
+    |
+109 | pub const PHILOX32x4x4_CHUNK_RATIO: u128 = (PHILOX32x4x4_PAR_CHUNK / PHILOX32x16) as u128;
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x4x4_SHIFT` is never used
+   --> src\cbrng\b32\philox.rs:112:11
+    |
+112 | pub const PHILOX32x4x4_SHIFT: u128 = PHILOX32x4x4_CHUNK_RATIO.trailing_zeros() as u128;
+    |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x16_SHIFT` is never used
+   --> src\cbrng\b32\philox.rs:115:11
+    |
+115 | pub const PHILOX32x16_SHIFT: usize = PHILOX32x16.trailing_zeros() as usize;
+    |           ^^^^^^^^^^^^^^^^^
+
+warning: `urng` (lib) generated 11 warnings
+    Finished `release` profile [optimized] target(s) in 33.12s
+
+EXIT=0 ELAPSED=33.156s

@@ -1,0 +1,21 @@
+$ rustc -Vv
+rustc 1.98.1 (48a229cea 2026-09-01)
+binary: rustc
+commit-hash: 48a229ceaefd4985c50990b14116b6d856af0985
+commit-date: 2026-09-01
+host: x86_64-pc-windows-msvc
+release: 1.98.1
+LLVM version: 22.1.8
+
+$ cargo -V
+cargo 1.98.1 (797e8a9bc 2026-08-05)
+
+$ rustup target list --installed
+x86_64-pc-windows-msvc
+
+$ dotnet --version
+10.0.401
+
+Target: urng-review_sol
+HEAD: 8417b4b3c36735015065c02878b665020292199e
+Original git status --short (empty means clean):

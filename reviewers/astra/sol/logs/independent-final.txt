@@ -1,0 +1,197 @@
+cwd: D:\.repo\urng-review\reviewers\astra\sol\work\source
+command: ["cargo", "test", "--offline", "--all-features", "--lib", "astra_review", "--", "--nocapture", "--test-threads=1"]
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\sol\work\source)
+warning: unnecessary `unsafe` block
+  --> src\astra_review.rs:10:5
+   |
+10 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+   |
+   = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+
+warning: unnecessary `unsafe` block
+   --> src\astra_review.rs:332:17
+    |
+332 |     let mut rng=unsafe{Sfc64x8::new(19)};
+    |                 ^^^^^^ unnecessary `unsafe` block
+
+warning: constant `PCG32X8_PAR_CHUNK` is never used
+  --> src\prng\b32\pcg.rs:62:15
+   |
+62 |     pub const PCG32X8_PAR_CHUNK: usize = 131_072;
+   |               ^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `PCG32X8_PAR_CHUNK_BLOCKS` is never used
+  --> src\prng\b32\pcg.rs:63:15
+   |
+63 |     pub const PCG32X8_PAR_CHUNK_BLOCKS: u64 = (PCG32X8_PAR_CHUNK / PCG32X8_LANE) as u64;
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PCG32_MULT` is never used
+  --> src\prng\b32\pcg.rs:64:15
+   |
+64 |     pub const PCG32_MULT: u64 = 6364136223846793005;
+   |               ^^^^^^^^^^
+
+warning: methods `randiv` and `randfv` are never used
+   --> src\prng\b32\sfc.rs:233:30
+    |
+178 |     impl Sfc32x8 {
+    |     ------------ methods in this implementation
+...
+233 |         pub(crate) unsafe fn randiv(&mut self, v_range: __m256i, v_min: __m256i) -> __m256i {
+    |                              ^^^^^^
+...
+244 |         pub(crate) unsafe fn randfv(&mut self, v_mult: __m256, v_min: __m256) -> __m256 {
+    |                              ^^^^^^
+
+warning: methods `randiv` and `randfv` are never used
+   --> src\prng\b32\sfc.rs:340:30
+    |
+288 |     impl Sfc32x16 {
+    |     ------------- methods in this implementation
+...
+340 |         pub(crate) unsafe fn randiv(&mut self, v_range: __m512i, v_min: __m512i) -> __m512i {
+    |                              ^^^^^^
+...
+353 |         pub(crate) unsafe fn randfv(&mut self, v_mult: __m512, v_min: __m512) -> __m512 {
+    |                              ^^^^^^
+
+warning: constant `SPLITMIX32X16_PAR_CHUNK` is never used
+  --> src\prng\b32\splitmix.rs:72:15
+   |
+72 |     pub const SPLITMIX32X16_PAR_CHUNK: usize = 8192;
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x4x4_PAR_CHUNK` is never used
+   --> src\cbrng\b32\philox.rs:106:11
+    |
+106 | pub const PHILOX32x4x4_PAR_CHUNK: usize = 131_072;
+    |           ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x4x4_CHUNK_RATIO` is never used
+   --> src\cbrng\b32\philox.rs:109:11
+    |
+109 | pub const PHILOX32x4x4_CHUNK_RATIO: u128 = (PHILOX32x4x4_PAR_CHUNK / PHILOX32x16) as u128;
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x4x4_SHIFT` is never used
+   --> src\cbrng\b32\philox.rs:112:11
+    |
+112 | pub const PHILOX32x4x4_SHIFT: u128 = PHILOX32x4x4_CHUNK_RATIO.trailing_zeros() as u128;
+    |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `PHILOX32x16_SHIFT` is never used
+   --> src\cbrng\b32\philox.rs:115:11
+    |
+115 | pub const PHILOX32x16_SHIFT: usize = PHILOX32x16.trailing_zeros() as usize;
+    |           ^^^^^^^^^^^^^^^^^
+
+warning: `urng` (lib test) generated 12 warnings
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 17.41s
+     Running unittests src\lib.rs (D:\.repo\urng-review\reviewers\astra\sol\target\debug\deps\urng-97bf10fe5b8844cd.exe)
+
+running 24 tests
+test astra_review::alias32_subnormal_zero_weight ... Alias32 [0, min-subnormal]: [0, 10000]
+ok
+test astra_review::alias64_subnormal_zero_weight ... Alias64 [0, min-subnormal]: [0, 10000]
+ok
+test astra_review::cabi_exact_stream_and_guards ... ok
+test astra_review::chacha_rfc8439 ... ok
+test astra_review::counter_carry_scalar ... ok
+test astra_review::crypto_debug_redacts_secret ... ChaCha Debug: ChaCha { x: [Wrap(1634760805), Wrap(857760878), Wrap(2036477234), Wrap(1797285236), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(0), Wrap(0), Wrap(0), Wrap(0)], buf: [Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0)], pos: Wrap(16), exhausted: false }
+Salsa Debug: Salsa { x: [Wrap(1634760805), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(857760878), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(2036477234), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1111638594), Wrap(1797285236)], buf: [Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0), Wrap(0)], pos: Wrap(16), exhausted: false }
+
+thread 'astra_review::crypto_debug_redacts_secret' (24076) panicked at src\astra_review.rs:223:5:
+assertion failed: !a.contains("1111638594") && !b.contains("1111638594")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+test astra_review::environment ... CPU=AMD Ryzen 7 9800X3D 8-Core Processor           \0 avx2=true avx512f=true avx512dq=true avx512vl=true threads=Ok(16)
+ok
+test astra_review::extreme_float32 ... float32 word=00000000 -> -340282350000000000000000000000000000000
+float32 word=00000001 -> -340282350000000000000000000000000000000
+float32 word=40000000 -> -170141160000000000000000000000000000000
+float32 word=80000000 -> 0
+float32 word=ffffffff -> 340282270000000000000000000000000000000
+ok
+test astra_review::extreme_float64 ... float64 word=0000000000000000 -> -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+float64 word=0000000000000001 -> -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+float64 word=2000000000000000 -> -89884656743115780000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+float64 word=4000000000000000 -> 0
+float64 word=ffffffffffffffff -> 179769313486231500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ok
+test astra_review::integer_distribution_scalar ... scalar integer residues: [100046, 99840, 100114]
+ok
+test astra_review::neighboring_seeds_distinct ... neighbor seeds: SplitMix32 equal=true, SplitMix64 equal=true
+
+thread 'astra_review::neighboring_seeds_distinct' (34388) panicked at src\astra_review.rs:294:5:
+assertion failed: x != y && p != q
+FAILED
+test astra_review::random123_known_answers ... ok
+test astra_review::regular_float_and_integer_edges ... ok
+test astra_review::salsa_reference_multiblock_and_carry ... ok
+test astra_review::samplers_invalid_and_regular ...
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\alias.rs:40:9:
+invalid weights
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\bst.rs:34:9:
+invalid weights
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\alias.rs:45:9:
+all weights are zero
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\bst.rs:39:9:
+all weights are zero
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\alias.rs:40:9:
+invalid weights
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\bst.rs:34:9:
+invalid weights
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\alias.rs:40:9:
+invalid weights
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\bst.rs:34:9:
+invalid weights
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\alias.rs:40:9:
+invalid weights
+
+thread 'astra_review::samplers_invalid_and_regular' (26576) panicked at src\sampler\b32\bst.rs:34:9:
+invalid weights
+ok
+test astra_review::scalar_xorshift_zero_seeds ... ok
+test astra_review::simd_philox_lane_reference ... ok
+test astra_review::simd_sfc64_lane_reference ... ok
+test astra_review::wide_squares_zero_key ... Squares32x4 lane0=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+thread 'astra_review::wide_squares_zero_key' (28688) panicked at src\astra_review.rs:284:5:
+zero-key lane is absorbing
+FAILED
+test astra_review::wide_threefry2_carry ... Threefry2 initial=[295270083, 3937102892, 376655324, 3337748263], after low-counter wrap=[698479705, 250460076, 555463482, 2541416777]
+ok
+test astra_review::wide_threefry4_carry ... Threefry4 initial=[2899152195, 1152665812, 256380466, 1098214785], after low-counter wrap=[1935829454, 3145608956, 2005575132, 3186312944]
+ok
+test astra_review::wide_threefry4_reference ... ok
+test astra_review::wide_xorshift_zero_lane ... wide xorshift lane0 seed61c88647=[270369, 67634689, 2647435461, 307599695, 2398689233, 745495504, 632435482, 435756210, 2005365029, 2916098932, 2657092299, 1495045943, 3031976842, 82049198, 87470069, 3385103793, 891394312, 3323190024, 321008529, 4283899417, 2383559219, 3822316985, 1391776747, 3652395599, 44632818, 1562130985, 2440533925, 333695716, 1028688091, 2771657022, 57526103, 3412600852]
+ok
+test astra_review::xoroshiro_jumps_independent_matrix ... ok
+
+failures:
+
+failures:
+    astra_review::crypto_debug_redacts_secret
+    astra_review::neighboring_seeds_distinct
+    astra_review::wide_squares_zero_key
+
+test result: FAILED. 21 passed; 3 failed; 0 ignored; 0 measured; 161 filtered out; finished in 0.10s
+
+error: test failed, to rerun pass `--lib`
+
+EXIT=101 ELAPSED=18.048s
