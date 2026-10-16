@@ -1,0 +1,9 @@
+[submodule "urng-review_sol"]
+	path = urng-review_sol
+	url = git@github.com:cet-t/urng-review_sol.git
+[submodule "urng-review_opus"]
+	path = urng-review_opus
+	url = git@github.com:cet-t/urng-review_opus.git
+[submodule "urng-review_astra"]
+	path = urng-review_astra
+	url = https://github.com/cet-t/urng-review_astra.git
