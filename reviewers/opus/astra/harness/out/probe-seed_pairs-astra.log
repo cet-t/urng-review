@@ -1,0 +1,40 @@
+﻿SplitMix32     new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Xoshiro128Pp   new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Xoshiro128Ss   new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Xoroshiro64Ss  new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Jsf32          new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Sfc32          new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Xorshift32     new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Xorshift128    new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Xorwow         new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Mt19937        new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Pcg32          new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Philox32       new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Threefry32x4   new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Threefry32x2   new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Squares32      new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Sfmt19937      new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+ChaCha20       new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+Salsa20        new(2)==new(3): false  new(0x12345678)==new(0x12345679): false
+SplitMix64     new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Xoshiro256Pp   new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Xoshiro256Ss   new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Xoroshiro128Pp new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Xoroshiro128Ss new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Sfc64          new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Xorshift64     new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Mt1993764      new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Sfmt1993764    new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Philox64       new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Philox4x64     new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Cet64          new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Cet256         new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Threefish256   new(2)==new(3): false  new(2^40)==new(2^40+1): false
+Biski64        new(2)==new(3): false  new(2^40)==new(2^40+1): false
+WyHash64       new(2)==new(3): false  new(2^40)==new(2^40+1): false
+TwistedGFSR    new(2)==new(3): false  new(2^40)==new(2^40+1): false
+TwistedGFSR    new(5)==new(5 | 0xDEADBEEF<<32): true
+wide::Squares32x8 new(2)==new(3): true
+wide::Pcg32x8 new(2)==new(3): false
+wide::Xoshiro128Ppx8 new(2)==new(3): false
+C ABI xoshiro128pp_new(2) == xoshiro128pp_new(3): false
