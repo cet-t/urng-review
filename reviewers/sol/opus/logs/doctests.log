@@ -1,0 +1,126 @@
+COMMAND: cargo test --offline --doc --features full
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.92s
+   Doc-tests urng
+
+running 114 tests
+test src\../README.md - (line 181) ... ignored
+test src\../README.md - (line 89) ... ignored
+test src\cbrng\b32\squares.rs - cbrng::b32::squares::simd::Squares32x8 (line 92) - compile ... ok
+test src\prng\b32\jsf.rs - prng::b32::jsf::simd::Jsf32x8 (line 75) - compile ... ok
+test src\cbrng\b32\philox.rs - cbrng::b32::philox::Philox32x4x4 (line 118) - compile ... ok
+test src\prng\b32\jsf.rs - prng::b32::jsf::simd::Jsf32x16 (line 168) - compile ... ok
+test src\cbrng\b32\threefry.rs - cbrng::b32::threefry::Threefry32x4 (line 18) ... ok
+test src\cbrng\b32\threefry.rs - cbrng::b32::threefry::Threefry32x2 (line 159) ... ok
+test src\crng\b32\salsa.rs - crng::b32::salsa::Salsa (line 18) ... ok
+test src\cbrng\b64\threefish.rs - cbrng::b64::threefish::Threefish256 (line 46) ... ok
+test src\cbrng\b32\squares.rs - cbrng::b32::squares::Squares32 (line 11) ... ok
+test src\cbrng\b64\philox.rs - cbrng::b64::philox::Philox64 (line 16) ... ok
+test src\prng\b32\jsf.rs - prng::b32::jsf::Jsf32 (line 8) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt11213 (line 448) ... ok
+test src\crng\b32\chacha.rs - crng::b32::chacha::ChaCha (line 21) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Mt19937::from_init_genrand (line 116) ... ok
+test src\../README.md - (line 203) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt1279 (line 448) ... ok
+test src\cbrng\b64\philox.rs - cbrng::b64::philox::Philox4x64 (line 107) ... ok
+test src\cbrng\b32\philox.rs - cbrng::b32::philox::Philox32 (line 21) ... ok
+test src\../README.md - (line 212) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Mt19937 (line 65) ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::simd::Sfc32x16 (line 280) - compile ... ok
+test src\prng\b32\pcg.rs - prng::b32::pcg::simd::Pcg32x8 (line 92) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt19937 (line 213) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt132049 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt216091 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt44497 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt4253 (line 448) ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::simd::Sfc32x8 (line 180) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt19937::from_init_gen_rand (line 244) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt2281 (line 448) ... ok
+test src\prng\b32\splitmix.rs - prng::b32::splitmix::simd::SplitMix32x16 (line 83) - compile ... ok
+test src\prng\b32\pcg.rs - prng::b32::pcg::Pcg32 (line 12) ... ok
+test src\prng\b32\xoroshiro.rs - prng::b32::xoroshiro::simd::Xoroshiro64Ssx16 (line 160) - compile ... ok
+test src\prng\b32\xoroshiro.rs - prng::b32::xoroshiro::simd::Xoroshiro64Ssx8 (line 79) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt607 (line 448) ... ok
+test src\prng\b32\xorshift.rs - prng::b32::xorshift::simd::Xorshift32x8 (line 125) - compile ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::simd::Sfc32x4 (line 80) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::simd::Xoshiro128Ssx16 (line 251) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt86243 (line 448) ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::Sfc32 (line 8) ... ok
+test src\prng\b32\xoroshiro.rs - prng::b32::xoroshiro::Xoroshiro64Ss (line 10) ... ok
+test src\prng\b32\xorshift.rs - prng::b32::xorshift::Xorshift128 (line 65) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::Xoshiro128Pp (line 13) ... ok
+test src\prng\b32\xorwow.rs - prng::b32::xorwow::Xorwow (line 12) ... ok
+test src\prng\b32\xorshift.rs - prng::b32::xorshift::Xorshift32 (line 16) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::simd::Xoshiro128Ppx16 (line 150) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::Xoshiro128Ss (line 79) ... ok
+test src\prng\b64\sfc.rs - prng::b64::sfc::simd::Sfc64x8 (line 71) - compile ... ok
+test src\prng\b64\biski.rs - prng::b64::biski::simd::Biski64x8 (line 64) - compile ... ok
+test src\prng\b32\splitmix.rs - prng::b32::splitmix::SplitMix32 (line 11) ... ok
+test src\prng\b64\cet.rs - prng::b64::cet::Cet64 (line 9) ... ok
+test src\prng\b64\biski.rs - prng::b64::biski::Biski64 (line 8) ... ok
+test src\prng\b64\mersenne.rs - prng::b64::mersenne::Sfmt1993764 (line 192) ... ok
+test src\prng\b64\xoroshiro.rs - prng::b64::xoroshiro::Xoroshiro128Pp (line 26) ... ok
+test src\prng\b64\xoroshiro.rs - prng::b64::xoroshiro::Xoroshiro128Ss (line 85) ... ok
+test src\prng\b64\mersenne.rs - prng::b64::mersenne::Mt1993764 (line 65) ... ok
+test src\prng\b64\mersenne.rs - prng::b64::mersenne::Mt1993764::from_init_genrand64 (line 99) ... ok
+test src\prng\b64\cet.rs - prng::b64::cet::Cet256 (line 56) ... ok
+test src\prng\b64\xoshiro.rs - prng::b64::xoshiro::Xoshiro256Pp (line 9) ... ok
+test src\prng\b64\twisted_gfsr.rs - prng::b64::twisted_gfsr::TwistedGFSR (line 13) ... ok
+test src\prng\b64\xorshift.rs - prng::b64::xorshift::Xorshift64 (line 11) ... ok
+test src\prng\b64\wyhash.rs - prng::b64::wyhash::WyHash64 (line 8) ... ok
+test src\prng\b64\sfc.rs - prng::b64::sfc::Sfc64 (line 11) ... ok
+test src\sampler\b32\bst.rs - sampler::b32::bst::Bst32 (line 8) ... ok
+test src\sampler.rs - sampler::Sampler (line 19) ... ok
+test src\sampler\b64\alias.rs - sampler::b64::alias::Alias64 (line 10) ... ok
+test src\sampler\b32\alias.rs - sampler::b32::alias::Alias32 (line 10) ... ok
+test src\prng\b64\splitmix.rs - prng::b64::splitmix::SplitMix64 (line 8) ... ok
+test src\sampler\b64\bst.rs - sampler::b64::bst::Bst64 (line 8) ... ok
+test src\seedgen.rs - seedgen (line 12) ... ok
+test src\prng\b64\xoshiro.rs - prng::b64::xoshiro::Xoshiro256Ss (line 59) ... ok
+test src\prng\b64\xoshiro.rs - prng::b64::xoshiro::simd::Xoshiro256Ssx2 (line 123) ... ok
+test src\seedgen.rs - seedgen::SeedGen (line 96) ... ok
+test src\wide\jsf.rs - wide::jsf::Jsf32x16 (line 15) ... ok
+test src\wide\jsf.rs - wide::jsf::Jsf32x4 (line 15) ... ok
+test src\wide\jsf.rs - wide::jsf::Jsf32x8 (line 15) ... ok
+test src\wide\pcg.rs - wide::pcg::Pcg32x8 (line 15) ... ok
+test src\wide\mod.rs - wide (line 11) ... ok
+test src\wide\pcg.rs - wide::pcg::Pcg32x16 (line 75) ... ok
+test src\wide\pcg.rs - wide::pcg::Pcg32x4 (line 15) ... ok
+test src\wide\sfc.rs - wide::sfc::Sfc32x4 (line 15) ... ok
+test src\wide\sfc.rs - wide::sfc::Sfc32x16 (line 15) ... ok
+test src\wide\squares.rs - wide::squares::Squares32x4 (line 16) ... ok
+test src\wide\splitmix.rs - wide::splitmix::SplitMix32x16 (line 15) ... ok
+test src\wide\squares.rs - wide::squares::Squares32x8 (line 16) ... ok
+test src\wide\splitmix.rs - wide::splitmix::SplitMix32x4 (line 15) ... ok
+test src\wide\splitmix.rs - wide::splitmix::SplitMix32x8 (line 15) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x2x16 (line 18) ... ok
+test src\wide\xoroshiro.rs - wide::xoroshiro::Xoroshiro64Ssx16 (line 15) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x2x4 (line 18) ... ok
+test src\wide\sfc.rs - wide::sfc::Sfc32x8 (line 15) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x2x8 (line 18) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x4x8 (line 137) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorwowx16 (line 138) ... ok
+test src\wide\xoroshiro.rs - wide::xoroshiro::Xoroshiro64Ssx8 (line 15) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x4x16 (line 137) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x4x4 (line 137) ... ok
+test src\wide\xoroshiro.rs - wide::xoroshiro::Xoroshiro64Ssx4 (line 15) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift32x16 (line 15) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift128x4 (line 71) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift128x16 (line 71) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift128x8 (line 71) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorwowx4 (line 138) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift32x4 (line 15) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ppx16 (line 18) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift32x8 (line 15) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorwowx8 (line 138) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ppx4 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ssx16 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ppx8 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ssx8 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ssx4 (line 18) ... ok
+
+test result: ok. 112 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.66s
+
+all doctests ran in 2.18s; merged doctests compilation took 1.30s
+
+EXIT: 0

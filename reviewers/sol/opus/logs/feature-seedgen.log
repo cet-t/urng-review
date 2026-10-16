@@ -1,0 +1,5 @@
+COMMAND: cargo check --offline --lib --features seedgen
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.43s
+
+EXIT: 0

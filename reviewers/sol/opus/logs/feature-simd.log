@@ -1,0 +1,77 @@
+COMMAND: cargo check --offline --lib --features simd
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+warning: constant `PCG32X8_PAR_CHUNK` is never used
+  --> src\prng\b32\pcg.rs:84:15
+   |
+84 |     pub const PCG32X8_PAR_CHUNK: usize = 131_072;
+   |               ^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `PCG32X8_PAR_CHUNK_BLOCKS` is never used
+  --> src\prng\b32\pcg.rs:85:15
+   |
+85 |     pub const PCG32X8_PAR_CHUNK_BLOCKS: u64 = (PCG32X8_PAR_CHUNK / PCG32X8_LANE) as u64;
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `PCG32_MULT` is never used
+  --> src\prng\b32\pcg.rs:86:15
+   |
+86 |     pub const PCG32_MULT: u64 = 6364136223846793005;
+   |               ^^^^^^^^^^
+
+warning: methods `nextfv`, `randiv`, and `randfv` are never used
+   --> src\prng\b32\sfc.rs:144:23
+    |
+ 94 |     impl Sfc32x4 {
+    |     ------------ methods in this implementation
+...
+144 |         pub(crate) fn nextfv(&mut self) -> __m128 {
+    |                       ^^^^^^
+...
+151 |         pub(crate) fn randiv(&mut self, v_range: __m128i, v_min: __m128i) -> __m128i {
+    |                       ^^^^^^
+...
+157 |         pub(crate) fn randfv(&mut self, v_mult: __m128, v_min: __m128) -> __m128 {
+    |                       ^^^^^^
+
+warning: methods `nextfv`, `randiv`, and `randfv` are never used
+   --> src\prng\b32\sfc.rs:247:23
+    |
+196 |     impl Sfc32x8 {
+    |     ------------ methods in this implementation
+...
+247 |         pub(crate) fn nextfv(&mut self) -> __m256 {
+    |                       ^^^^^^
+...
+253 |         pub(crate) fn randiv(&mut self, v_range: __m256i, v_min: __m256i) -> __m256i {
+    |                       ^^^^^^
+...
+259 |         pub(crate) fn randfv(&mut self, v_mult: __m256, v_min: __m256) -> __m256 {
+    |                       ^^^^^^
+
+warning: methods `nextfv`, `randiv`, and `randfv` are never used
+   --> src\prng\b32\sfc.rs:346:23
+    |
+296 |     impl Sfc32x16 {
+    |     ------------- methods in this implementation
+...
+346 |         pub(crate) fn nextfv(&mut self) -> __m512 {
+    |                       ^^^^^^
+...
+352 |         pub(crate) fn randiv(&mut self, v_range: __m512i, v_min: __m512i) -> __m512i {
+    |                       ^^^^^^
+...
+358 |         pub(crate) fn randfv(&mut self, v_mult: __m512, v_min: __m512) -> __m512 {
+    |                       ^^^^^^
+
+warning: constant `SPLITMIX32X16_PAR_CHUNK` is never used
+  --> src\prng\b32\splitmix.rs:76:15
+   |
+76 |     pub const SPLITMIX32X16_PAR_CHUNK: usize = 8192;
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `urng` (lib) generated 7 warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.57s
+
+EXIT: 0

@@ -1,0 +1,18 @@
+COMMAND: cargo test --offline --test sol_cipher_review -- --nocapture
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.42s
+     Running tests\sol_cipher_review.rs (target\debug\deps\sol_cipher_review-6961a62c8f69e2f8.exe)
+
+running 7 tests
+test chacha8_independent_blocks ... ok
+test salsa_key_does_not_appear_in_debug_output ... ok
+test chacha20_independent_blocks ... ok
+test reference::chacha_reference_rfc8439_known_answer ... ok
+test salsa8_independent_blocks ... ok
+test salsa20_independent_blocks ... ok
+test chacha_key_does_not_appear_in_debug_output ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+EXIT: 0

@@ -1,0 +1,33 @@
+COMMAND: cargo test --offline --features wide --lib sol_counter_probes -- --nocapture
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.94s
+     Running unittests src\lib.rs (target\debug\deps\urng-ca606d75bd284c87.exe)
+
+running 2 tests
+2x32 output after overflow=[2587576508, 2241801619, 3408744026, 1791864808], initial=[2587576508, 2241801619, 3408744026, 1791864808]
+4x32 output after overflow=[
+thread 'wide::threefry::sol_counter_probes::threefry2_carries_into_high_counter_word' (14440) panicked at src\wide\threefry.rs:319:9:
+assertion `left == right` failed: high counter must advance; output repeats at 2^32 blocks
+  left: [0, 0, 0, 0]
+ right: [1, 1, 1, 1]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+3023759841, 4054510754, 3648603643, 2525219433], initial=[3023759841, 4054510754, 3648603643, 2525219433]
+
+thread 'wide::threefry::sol_counter_probes::threefry4_carries_into_high_counter_word' (84032) panicked at src\wide\threefry.rs:330:9:
+assertion `left == right` failed: high counter must advance; output repeats at 2^32 blocks
+  left: [0, 0, 0, 0]
+ right: [1, 1, 1, 1]
+test wide::threefry::sol_counter_probes::threefry2_carries_into_high_counter_word ... FAILED
+test wide::threefry::sol_counter_probes::threefry4_carries_into_high_counter_word ... FAILED
+
+failures:
+
+failures:
+    wide::threefry::sol_counter_probes::threefry2_carries_into_high_counter_word
+    wide::threefry::sol_counter_probes::threefry4_carries_into_high_counter_word
+
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 130 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--lib`
+
+EXIT: 101

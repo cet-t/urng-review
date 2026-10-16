@@ -1,0 +1,3 @@
+COMMAND: rustc --edition=2024 -O -C panic=abort -A unused_unsafe D:\.repo\urng-review\reviewers\sol\opus\bench.rs --extern urng=D:\.repo\urng-review\reviewers\sol\opus\work-before\target\release\liburng.rlib -L dependency=D:\.repo\urng-review\reviewers\sol\opus\work-before\target\release\deps -o D:\.repo\urng-review\reviewers\sol\opus\bin\bench-before.exe
+
+EXIT: 0

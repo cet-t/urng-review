@@ -1,0 +1,5 @@
+COMMAND: cargo check --offline --lib --features sampler
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.42s
+
+EXIT: 0

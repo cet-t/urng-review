@@ -1,0 +1,108 @@
+[
+  {
+    "name": "feature-default",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-rand",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "rand"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-simd",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "simd"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-cabi",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "cabi"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-wide",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "wide"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-sampler",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "sampler"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-seedgen",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "seedgen"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-cabi,simd",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "cabi,simd"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "feature-full",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--lib",
+      "--features",
+      "full"
+    ],
+    "exit": 0
+  }
+]

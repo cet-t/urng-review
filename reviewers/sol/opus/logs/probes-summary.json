@@ -1,0 +1,17 @@
+[
+  {
+    "name": "probes",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "--features",
+      "full",
+      "--test",
+      "sol_review",
+      "--",
+      "--nocapture"
+    ],
+    "exit": 101
+  }
+]

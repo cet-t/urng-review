@@ -1,0 +1,38 @@
+[
+  {
+    "name": "doctests",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "--doc",
+      "--features",
+      "full"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "alltargets",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "--all-targets",
+      "--features",
+      "full"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "build-release",
+    "command": [
+      "cargo",
+      "build",
+      "--offline",
+      "--release",
+      "--features",
+      "full"
+    ],
+    "exit": 0
+  }
+]

@@ -1,0 +1,12 @@
+COMMAND: cargo test --offline --features rand --test sol_rand64_review
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.83s
+     Running tests\sol_rand64_review.rs (target\debug\deps\sol_rand64_review-1852a73ae6999a2b.exe)
+
+running 1 test
+test native_64_bit_generators_implement_rand_core ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+EXIT: 0

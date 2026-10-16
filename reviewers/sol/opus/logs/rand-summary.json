@@ -1,0 +1,15 @@
+[
+  {
+    "name": "rand64-probe",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "--features",
+      "rand",
+      "--test",
+      "sol_rand64_review"
+    ],
+    "exit": 0
+  }
+]

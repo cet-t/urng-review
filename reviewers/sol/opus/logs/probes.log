@@ -1,0 +1,111 @@
+COMMAND: cargo test --offline --features full --test sol_review -- --nocapture
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\sol\opus\work)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.82s
+     Running tests\sol_review.rs (target\debug\deps\sol_review-aafe9eebddf30622.exe)
+
+running 20 tests
+
+thread 'alias32_rejects_invalid_weights' (8068) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'alias64_rejects_invalid_weights' (34296) panicked at src\sampler.rs:56:1:
+sampler weights must be finite and non-negative
+
+thread 'alias32_small_valid_weight_never_selects_zero' (64588) panicked at tests\sol_review.rs:14:9:
+assertion `left == right` failed: positive weight=1e-45
+  left: 1
+ right: 0
+
+thread 'alias32_rejects_invalid_weights' (8068) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+
+thread 'alias64_rejects_invalid_weights' (34296) panicked at src\sampler.rs:56:1:
+sampler weights must be finite and non-negative
+
+thread 'alias32_rejects_invalid_weights' (8068) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+
+thread 'alias64_rejects_invalid_weights' (34296) panicked at src\sampler.rs:56:1:
+sampler weights must be finite and non-negative
+
+thread 'float32_finite_extreme_endpoints_remain_in_range' (48984) panicked at tests\sol_review.rs:53:9:
+word=0 got=NaN
+
+thread 'alias32_rejects_invalid_weights' (8068) panicked at src\sampler.rs:55:1:
+sampler weights must have a positive, finite sum
+
+thread 'alias64_rejects_invalid_weights' (34296) panicked at src\sampler.rs:56:1:
+sampler weights must have a positive, finite sum
+
+thread 'alias64_small_valid_weight_never_selects_zero' (6264) panicked at tests\sol_review.rs:23:9:
+assertion `left == right` failed: positive weight=5e-324
+  left: 1
+ right: 0
+
+thread 'wide_threefry_x4_matches_random123' (13180) panicked at tests\sol_review.rs:141:1:
+assertion `left == right` failed: block=0 lane=0
+  left: [3023759841, 2343225285, 1155817591, 3763945978]
+ right: [3307560983, 627444597, 2532636873, 236180073]
+
+thread 'wide_xorshift32_x4_avoids_zero_state' (81624) panicked at tests\sol_review.rs:219:1:
+lane 0 is stuck: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+test alias32_small_valid_weight_never_selects_zero ...
+thread 'float64_finite_extreme_endpoints_remain_in_range' (11276) panicked at tests\sol_review.rs:61:9:
+word=0 got=NaN
+FAILED
+test scalar_threefry_matches_random123 ...
+thread 'wide_threefry_x16_matches_random123' (15160) panicked at tests\sol_review.rs:143:1:
+assertion `left == right` failed: block=0 lane=0
+  left: [3343892586, 1774806393, 3705022754, 2004757576]
+ right: [884327818, 3506443327, 2617033216, 3396092008]
+ok
+thread 'wide_xorshift32_x8_avoids_zero_state' (66072) panicked at tests\sol_review.rs:220:1:
+lane 0 is stuck: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+test float32_finite_extreme_endpoints_remain_in_range ... FAILED
+test alias32_rejects_invalid_weights ... ok
+test full_width_integer_endpoints_match_bijection ... ok
+test independent_threefry_reference_matches_official_kats ...
+thread 'wide_threefry_x8_matches_random123' (10840) panicked at tests\sol_review.rs:142:1:
+assertion `left == right` failed: block=0 lane=0
+  left: [1808108675, 1066733367, 3579935953, 3745723335]
+ right: [1917405559, 3188067869, 880888030, 609380665]
+ok
+
+thread 'wide_xorshift32_x16_avoids_zero_state' (68460) panicked at tests\sol_review.rs:221:1:
+lane 0 is stuck: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+test alias64_rejects_invalid_weights ... ok
+test alias64_small_valid_weight_never_selects_zero ... FAILED
+test wide_threefry_x4_matches_random123 ... FAILED
+test wide_xorshift32_x4_avoids_zero_state ... FAILED
+test float64_finite_extreme_endpoints_remain_in_range ... FAILED
+test wide_threefry_x16_matches_random123 ... FAILED
+test wide_xorshift32_x8_avoids_zero_state ... FAILED
+test xoroshiro128pp_jumps_match_author ... ok
+test wide_threefry_x8_matches_random123 ... FAILED
+test wide_xorshift32_x16_avoids_zero_state ... FAILED
+test xoroshiro128ss_jumps_match_author ... ok
+test xoshiro256pp_matches_author_reference ... ok
+test cabi_splitmix_continues_across_calls ... ok
+test cabi_threefry_continues_across_odd_calls ... ok
+
+failures:
+
+failures:
+    alias32_small_valid_weight_never_selects_zero
+    alias64_small_valid_weight_never_selects_zero
+    float32_finite_extreme_endpoints_remain_in_range
+    float64_finite_extreme_endpoints_remain_in_range
+    wide_threefry_x16_matches_random123
+    wide_threefry_x4_matches_random123
+    wide_threefry_x8_matches_random123
+    wide_xorshift32_x16_avoids_zero_state
+    wide_xorshift32_x4_avoids_zero_state
+    wide_xorshift32_x8_avoids_zero_state
+
+test result: FAILED. 10 passed; 10 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+error: test failed, to rerun pass `--test sol_review`
+
+EXIT: 101

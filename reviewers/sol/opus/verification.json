@@ -1,0 +1,28 @@
+{
+  "issues": 6,
+  "severity": {
+    "High": 3,
+    "Medium": 3
+  },
+  "existing_tests": [
+    196,
+    0
+  ],
+  "probe_tests": [
+    10,
+    10
+  ],
+  "counter_tests": [
+    0,
+    2
+  ],
+  "cipher_tests": [
+    7,
+    0
+  ],
+  "source_files_unchanged": 97,
+  "original_git_status": "clean",
+  "benchmark_rows_each_version": 65,
+  "benchmark_conditions": 13,
+  "python_syntax": "all valid"
+}
