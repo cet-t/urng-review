@@ -1,0 +1,13 @@
+cwd: D:\.repo\urng-review\reviewers\astra\opus\work\source
+command: ["cargo", "check", "--offline", "--lib", "--no-default-features"]
+   Compiling memchr v2.8.3
+    Checking wrapn v0.10.0
+    Checking bytemuck v1.25.0
+   Compiling aho-corasick v1.1.4
+   Compiling regex-automata v0.4.15
+   Compiling regex v1.13.0
+   Compiling csbindgen v1.9.8
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\opus\work\source)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.81s
+
+EXIT=0 ELAPSED=4.851s

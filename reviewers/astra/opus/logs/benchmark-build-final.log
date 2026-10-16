@@ -1,0 +1,6 @@
+cwd: D:\.repo\urng-review\reviewers\astra\opus\work\source
+command: ["cargo", "build", "--offline", "--release", "--all-features", "--example", "astra_bench", "--lib"]
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\opus\work\source)
+    Finished `release` profile [optimized] target(s) in 18.09s
+
+EXIT=0 ELAPSED=18.176s

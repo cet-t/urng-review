@@ -1,0 +1,6 @@
+cwd: D:\.repo\urng-review\reviewers\astra\opus\work\source
+command: ["cargo", "check", "--offline", "--lib", "--no-default-features", "--features", "sampler"]
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\opus\work\source)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.37s
+
+EXIT=0 ELAPSED=1.406s

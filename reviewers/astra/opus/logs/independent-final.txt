@@ -1,0 +1,143 @@
+cwd: D:\.repo\urng-review\reviewers\astra\opus\work\source
+command: ["cargo", "test", "--offline", "--all-features", "--lib", "astra_review", "--", "--nocapture", "--test-threads=1"]
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\opus\work\source)
+warning: unnecessary `unsafe` block
+  --> src\astra_review.rs:10:5
+   |
+10 |     unsafe {
+   |     ^^^^^^ unnecessary `unsafe` block
+   |
+   = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+
+warning: `urng` (lib test) generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 20.24s
+     Running unittests src\lib.rs (D:\.repo\urng-review\reviewers\astra\opus\target\debug\deps\urng-97bf10fe5b8844cd.exe)
+
+running 24 tests
+test astra_review::alias32_subnormal_zero_weight ... Alias32 [0, min-subnormal]: [5064, 4936]
+
+thread 'astra_review::alias32_subnormal_zero_weight' (33144) panicked at src\astra_review.rs:66:5:
+assertion `left == right` failed
+  left: [5064, 4936]
+ right: [0, 10000]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+test astra_review::alias64_subnormal_zero_weight ... Alias64 [0, min-subnormal]: [4965, 5035]
+
+thread 'astra_review::alias64_subnormal_zero_weight' (34256) panicked at src\astra_review.rs:75:5:
+assertion `left == right` failed
+  left: [4965, 5035]
+ right: [0, 10000]
+FAILED
+test astra_review::cabi_exact_stream_and_guards ... ok
+test astra_review::chacha_rfc8439 ... ok
+test astra_review::counter_carry_scalar ... ok
+test astra_review::crypto_debug_redacts_secret ... ChaCha Debug: ChaCha { rounds: 20, .. }
+Salsa Debug: Salsa { rounds: 20, .. }
+ok
+test astra_review::environment ... CPU=AMD Ryzen 7 9800X3D 8-Core Processor           \0 avx2=true avx512f=true avx512dq=true avx512vl=true threads=Ok(16)
+ok
+test astra_review::extreme_float32 ... float32 word=00000000 -> NaN
+
+thread 'astra_review::extreme_float32' (22068) panicked at src\astra_review.rs:29:9:
+assertion failed: x.is_finite() && x >= -f32::MAX && x < f32::MAX
+FAILED
+test astra_review::extreme_float64 ... float64 word=0000000000000000 -> NaN
+
+thread 'astra_review::extreme_float64' (29172) panicked at src\astra_review.rs:39:9:
+assertion failed: x.is_finite() && x >= -f64::MAX && x < f64::MAX
+FAILED
+test astra_review::integer_distribution_scalar ... scalar integer residues: [100046, 99840, 100114]
+ok
+test astra_review::neighboring_seeds_distinct ... neighbor seeds: SplitMix32 equal=false, SplitMix64 equal=false
+ok
+test astra_review::random123_known_answers ... ok
+test astra_review::regular_float_and_integer_edges ... ok
+test astra_review::salsa_reference_multiblock_and_carry ... ok
+test astra_review::samplers_invalid_and_regular ...
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must not be empty
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must not be empty
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must have a positive, finite sum
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must have a positive, finite sum
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+
+thread 'astra_review::samplers_invalid_and_regular' (23500) panicked at src\sampler.rs:55:1:
+sampler weights must be finite and non-negative
+ok
+test astra_review::scalar_xorshift_zero_seeds ... ok
+test astra_review::simd_philox_lane_reference ... ok
+test astra_review::simd_sfc64_lane_reference ... ok
+test astra_review::wide_squares_zero_key ... Squares32x4 lane0=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+thread 'astra_review::wide_squares_zero_key' (7432) panicked at src\astra_review.rs:284:5:
+zero-key lane is absorbing
+FAILED
+test astra_review::wide_threefry2_carry ... Threefry2 initial=[295270083, 3937102892, 376655324, 3337748263], after low-counter wrap=[295270083, 3937102892, 376655324, 3337748263]
+
+thread 'astra_review::wide_threefry2_carry' (1580) panicked at src\astra_review.rs:265:5:
+assertion `left != right` failed: must carry into high counter instead of restarting the stream
+  left: [295270083, 3937102892, 376655324, 3337748263]
+ right: [295270083, 3937102892, 376655324, 3337748263]
+FAILED
+test astra_review::wide_threefry4_carry ... Threefry4 initial=[706044619, 3464082565, 2933485777, 2264596393], after low-counter wrap=[706044619, 3464082565, 2933485777, 2264596393]
+
+thread 'astra_review::wide_threefry4_carry' (33940) panicked at src\astra_review.rs:276:5:
+assertion `left != right` failed: must carry into high counter instead of restarting the stream
+  left: [706044619, 3464082565, 2933485777, 2264596393]
+ right: [706044619, 3464082565, 2933485777, 2264596393]
+FAILED
+test astra_review::wide_threefry4_reference ...
+thread 'astra_review::wide_threefry4_reference' (34500) panicked at src\astra_review.rs:163:32:
+assertion `left == right` failed: counter=0 word=0 lane=0
+  left: 706044619
+ right: 2899152195
+FAILED
+test astra_review::wide_xorshift_zero_lane ... wide xorshift lane0 seed61c88647=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+thread 'astra_review::wide_xorshift_zero_lane' (10024) panicked at src\astra_review.rs:97:5:
+assertion failed: first.iter().any(|&x| x != 0)
+FAILED
+test astra_review::xoroshiro_jumps_independent_matrix ... ok
+
+failures:
+
+failures:
+    astra_review::alias32_subnormal_zero_weight
+    astra_review::alias64_subnormal_zero_weight
+    astra_review::extreme_float32
+    astra_review::extreme_float64
+    astra_review::wide_squares_zero_key
+    astra_review::wide_threefry2_carry
+    astra_review::wide_threefry4_carry
+    astra_review::wide_threefry4_reference
+    astra_review::wide_xorshift_zero_lane
+
+test result: FAILED. 15 passed; 9 failed; 0 ignored; 0 measured; 172 filtered out; finished in 0.10s
+
+error: test failed, to rerun pass `--lib`
+
+EXIT=101 ELAPSED=20.501s

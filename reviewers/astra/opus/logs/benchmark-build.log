@@ -1,0 +1,119 @@
+cwd: D:\.repo\urng-review\reviewers\astra\opus\work\source
+command: ["cargo", "build", "--offline", "--release", "--all-features", "--example", "astra_bench"]
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.46
+   Compiling cfg-if v1.0.4
+   Compiling windows-link v0.2.1
+   Compiling semver v1.0.28
+   Compiling crossbeam-utils v0.8.22
+   Compiling serde_core v1.0.229
+   Compiling autocfg v1.5.1
+   Compiling crc32fast v1.5.0
+   Compiling winapi v0.3.9
+   Compiling simd-adler32 v0.3.9
+   Compiling adler2 v2.0.1
+   Compiling crossbeam-epoch v0.9.20
+   Compiling memchr v2.8.3
+   Compiling regex-syntax v0.8.11
+   Compiling windows-sys v0.61.2
+   Compiling crossbeam-deque v0.8.7
+   Compiling zerocopy v0.8.54
+   Compiling rustc_version v0.4.1
+   Compiling aho-corasick v1.1.4
+   Compiling miniz_oxide v0.8.9
+   Compiling num-traits v0.2.19
+   Compiling libc v0.2.186
+   Compiling winapi-util v0.1.11
+   Compiling fdeflate v0.3.7
+   Compiling rayon-core v1.13.0
+   Compiling pathfinder_simd v0.5.6
+   Compiling color_quant v1.1.0
+   Compiling bitflags v1.3.2
+   Compiling flate2 v1.1.9
+   Compiling regex-automata v0.4.15
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.9
+   Compiling byteorder v1.5.0
+   Compiling serde v1.0.229
+   Compiling syn v2.0.118
+   Compiling syn v3.0.0
+   Compiling zmij v1.0.23
+   Compiling either v1.16.0
+   Compiling cc v1.2.66
+   Compiling png v0.17.16
+   Compiling same-file v1.0.6
+   Compiling weezl v0.1.12
+   Compiling itoa v1.0.18
+   Compiling font-kit v0.14.3
+   Compiling plotters-backend v0.3.7
+   Compiling jpeg-decoder v0.3.2
+   Compiling log v0.4.33
+   Compiling wio v0.2.2
+   Compiling regex v1.13.0
+   Compiling serde_json v1.0.150
+   Compiling lazy_static v1.5.0
+   Compiling pathfinder_geometry v0.5.1
+   Compiling gif v0.12.0
+   Compiling walkdir v2.5.0
+   Compiling dwrote v0.11.5
+   Compiling csbindgen v1.9.8
+   Compiling clap_lex v1.1.0
+   Compiling bitflags v2.13.0
+   Compiling alloca v0.4.0
+   Compiling rand_core v0.10.1
+   Compiling anstyle v1.0.14
+   Compiling ciborium-io v0.2.2
+   Compiling float-ord v0.3.2
+   Compiling thiserror v2.0.18
+   Compiling clap_builder v4.6.2
+   Compiling rayon v1.12.0
+   Compiling plotters-svg v0.3.7
+   Compiling chrono v0.4.45
+   Compiling itertools v0.13.0
+   Compiling csv-core v0.1.13
+   Compiling anyhow v1.0.104
+   Compiling ryu v1.0.23
+   Compiling pastey v0.2.3
+   Compiling ttf-parser v0.20.0
+   Compiling serde_derive v1.0.229
+   Compiling cast v0.3.0
+   Compiling bytemuck_derive v1.10.2
+   Compiling zerocopy-derive v0.8.54
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\opus\work\source)
+   Compiling thiserror-impl v2.0.18
+   Compiling criterion-plot v0.8.2
+   Compiling clap v4.6.2
+   Compiling wrapn v0.10.0
+   Compiling csv v1.4.0
+   Compiling page_size v0.6.0
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling rand_sfc v0.2.0
+   Compiling rand v0.10.2
+   Compiling colored v3.1.1
+   Compiling thousands v0.2.0
+   Compiling bytemuck v1.25.0
+   Compiling image v0.24.9
+   Compiling safe_arch v1.0.0
+   Compiling wide v1.5.0
+   Compiling plotters-bitmap v0.3.7
+   Compiling plotters v0.3.7
+   Compiling tinytemplate v1.2.1
+   Compiling half v2.7.1
+   Compiling ciborium-ll v0.2.2
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.8.2
+error[E0133]: call to function `Sfc64x8::new` with `#[target_feature]` is unsafe and requires unsafe block
+  --> examples\astra_bench.rs:24:15
+   |
+24 |     let mut r=urng::Sfc64x8::new(19);
+   |               ^^^^^^^^^^^^^^^^^^^^^^ call to function with `#[target_feature]`
+   |
+   = help: in order for the call to be safe, the context requires the following additional target feature: avx512f
+   = note: the avx512f target feature being enabled in the build configuration does not remove the requirement to list it in `#[target_feature]`
+
+For more information about this error, try `rustc --explain E0133`.
+error: could not compile `urng` (example "astra_bench") due to 1 previous error
+
+EXIT=101 ELAPSED=55.132s

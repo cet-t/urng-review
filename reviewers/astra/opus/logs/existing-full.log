@@ -1,0 +1,462 @@
+cwd: D:\.repo\urng-review\reviewers\astra\opus\work\source
+command: ["cargo", "test", "--offline", "--all-features"]
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.46
+   Compiling memchr v2.8.3
+   Compiling cfg-if v1.0.4
+   Compiling windows-link v0.2.1
+   Compiling winapi v0.3.9
+   Compiling crossbeam-utils v0.8.22
+   Compiling crc32fast v1.5.0
+   Compiling semver v1.0.28
+   Compiling serde_core v1.0.229
+   Compiling simd-adler32 v0.3.9
+   Compiling autocfg v1.5.1
+   Compiling crossbeam-epoch v0.9.20
+   Compiling adler2 v2.0.1
+   Compiling regex-syntax v0.8.11
+   Compiling windows-sys v0.61.2
+   Compiling zerocopy v0.8.54
+   Compiling crossbeam-deque v0.8.7
+   Compiling rustc_version v0.4.1
+   Compiling aho-corasick v1.1.4
+   Compiling miniz_oxide v0.8.9
+   Compiling num-traits v0.2.19
+   Compiling pathfinder_simd v0.5.6
+   Compiling libc v0.2.186
+   Compiling winapi-util v0.1.11
+   Compiling fdeflate v0.3.7
+   Compiling either v1.16.0
+   Compiling byteorder v1.5.0
+   Compiling rayon-core v1.13.0
+   Compiling shlex v2.0.1
+   Compiling bitflags v1.3.2
+   Compiling flate2 v1.1.9
+   Compiling regex-automata v0.4.15
+   Compiling color_quant v1.1.0
+   Compiling find-msvc-tools v0.1.9
+   Compiling serde v1.0.229
+   Compiling zmij v1.0.23
+   Compiling syn v2.0.118
+   Compiling syn v3.0.0
+   Compiling cc v1.2.66
+   Compiling png v0.17.16
+   Compiling same-file v1.0.6
+   Compiling serde_json v1.0.150
+   Compiling jpeg-decoder v0.3.2
+   Compiling itoa v1.0.18
+   Compiling weezl v0.1.12
+   Compiling lazy_static v1.5.0
+   Compiling font-kit v0.14.3
+   Compiling regex v1.13.0
+   Compiling log v0.4.33
+   Compiling plotters-backend v0.3.7
+   Compiling pathfinder_geometry v0.5.1
+   Compiling gif v0.12.0
+   Compiling wio v0.2.2
+   Compiling walkdir v2.5.0
+   Compiling alloca v0.4.0
+   Compiling thiserror v2.0.18
+   Compiling dwrote v0.11.5
+   Compiling csbindgen v1.9.8
+   Compiling ciborium-io v0.2.2
+   Compiling clap_lex v1.1.0
+   Compiling float-ord v0.3.2
+   Compiling anstyle v1.0.14
+   Compiling rand_core v0.10.1
+   Compiling bitflags v2.13.0
+   Compiling clap_builder v4.6.2
+   Compiling rayon v1.12.0
+   Compiling plotters-svg v0.3.7
+   Compiling chrono v0.4.45
+   Compiling itertools v0.13.0
+   Compiling csv-core v0.1.13
+   Compiling anyhow v1.0.104
+   Compiling ryu v1.0.23
+   Compiling serde_derive v1.0.229
+   Compiling ttf-parser v0.20.0
+   Compiling pastey v0.2.3
+   Compiling cast v0.3.0
+   Compiling csv v1.4.0
+   Compiling clap v4.6.2
+   Compiling page_size v0.6.0
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling criterion-plot v0.8.2
+   Compiling rand_sfc v0.2.0
+   Compiling rand v0.10.2
+   Compiling colored v3.1.1
+   Compiling thousands v0.2.0
+   Compiling bytemuck_derive v1.10.2
+   Compiling zerocopy-derive v0.8.54
+   Compiling thiserror-impl v2.0.18
+   Compiling urng v1.0.0 (D:\.repo\urng-review\reviewers\astra\opus\work\source)
+   Compiling wrapn v0.10.0
+   Compiling bytemuck v1.25.0
+   Compiling image v0.24.9
+   Compiling safe_arch v1.0.0
+   Compiling tinytemplate v1.2.1
+   Compiling wide v1.5.0
+   Compiling plotters-bitmap v0.3.7
+   Compiling plotters v0.3.7
+   Compiling half v2.7.1
+   Compiling ciborium-ll v0.2.2
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.8.2
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 32.63s
+     Running unittests src\lib.rs (D:\.repo\urng-review\reviewers\astra\opus\target\debug\deps\urng-97bf10fe5b8844cd.exe)
+
+running 172 tests
+test _internal::tests::default_seed_calls_are_distinct ... ok
+test _internal::tests::fill_chunk_nt_small_batch_falls_back ... ok
+test _internal::tests::fill_chunk_nt_writes_every_element ... ok
+test cbrng::b32::philox::tests::philox4x32_random123_kats ... ok
+test cbrng::b32::threefry::tests::test_threefry32x4 ... ok
+test _internal::tests::fill_chunk_writes_every_element ... ok
+test cbrng::b32::philox::tests::test_philox32 ... ok
+test cbrng::b32::squares::tests::test_squares32 ... ok
+test cbrng::b32::threefry::tests::threefry_random123_kats ... ok
+test cbrng::b64::philox::tests::philox4x64_first_outputs_come_from_the_first_block ... ok
+test cabi::prng::b64::sfc::tests::sfc64x8_chunk_equals_scalar_streams ... ok
+test cbrng::b64::philox::tests::philox_random123_kats ... ok
+test cbrng::b32::threefry::tests::test_threefry32x2 ... ok
+test cabi::cbrng::b32::philox::tests::bulk_fill_carries_through_128_bit_counter ... ok
+test cbrng::b64::philox::tests::test_philox4x64 ... ok
+test cbrng::b64::philox::tests::test_philox64 ... ok
+test cbrng::b64::threefish::tests::test_threefish256 ... ok
+test cbrng::b64::threefish::tests::threefish256_skein_kat_and_reference ... ok
+test crng::b32::chacha::tests::chacha20_rfc8439_block ... ok
+test cabi::cbrng::b32::threefry::tests::batched_blocks_handle_the_64_bit_carry ... ok
+test cbrng::b64::threefish::tests::threefish256_first_outputs_are_not_the_zero_buffer ... ok
+test choice::tests::it_works ... ok
+test crng::b32::chacha::tests::debug_does_not_leak_key ... ok
+test crng::b32::chacha::tests::chacha8_matches_reference_and_is_not_self_feeding ... ok
+test crng::b32::chacha::tests::test_cha_cha20 ... ok
+test crng::b32::chacha::tests::test_cha_cha8 ... ok
+test crng::b32::salsa::tests::salsa20_estream_set1_vector0 ... ok
+test crng::b32::salsa::tests::test_salsa20 ... ok
+test crng::b32::salsa::tests::test_salsa8 ... ok
+test crng::b32::salsa::tests::salsa_spec_quarterround_and_reference ... ok
+test prng::b32::jsf::tests::test_jsf32 ... ok
+test prng::b32::mersenne::tests::test_mt19937 ... ok
+test prng::b32::mersenne::tests::test_sfmt11213 ... ok
+test prng::b32::mersenne::tests::test_sfmt1279 ... ok
+test prng::b32::mersenne::tests::test_sfmt19937 ... ok
+test prng::b32::mersenne::tests::test_sfmt2281 ... ok
+test prng::b32::mersenne::tests::test_sfmt4253 ... ok
+test prng::b32::mersenne::tests::test_sfmt132049 ... ok
+test prng::b32::mersenne::tests::test_sfmt607 ... ok
+test prng::b32::mersenne::tests::test_sfmt44497 ... ok
+test prng::b32::mersenne::tests::test_sfmt86243 ... ok
+test prng::b32::pcg::tests::pcg32_reference_demo_vector ... ok
+test prng::b32::mersenne::tests::test_sfmt216091 ... ok
+test prng::b32::mersenne::tests::mt19937_reference_seeding ... ok
+test prng::b32::pcg::tests::test_pcg32 ... ok
+test prng::b32::sfc::tests::sfc32_practrand_vector ... ok
+test prng::b32::sfc::tests::sfc32x4_lanes_match_scalar ... ok
+test prng::b32::mersenne::tests::sfmt19937_reference_seeding ... ok
+test prng::b32::sfc::tests::sfc32x4_randiv_randfv_match_scalar ... ok
+test prng::b32::sfc::tests::test_sfc32 ... ok
+test prng::b32::sfc::tests::test_sfc32x4 ... ok
+test prng::b32::pcg::tests::pcg32_increment_is_always_odd ... ok
+test prng::b32::splitmix::tests::test_split_mix32 ... ok
+test prng::b32::xoroshiro::tests::test_xoroshiro64_ss ... ok
+test prng::b32::xorshift::tests::test_xorshift128 ... ok
+test prng::b32::xorshift::tests::test_xorshift32 ... ok
+test prng::b32::xorshift::tests::xorshift32_has_no_all_zero_seed ... ok
+test prng::b32::xorwow::tests::test_xorwow ... ok
+test prng::b32::xoshiro::tests::test_xoshiro128_ss ... ok
+test prng::b64::biski::tests::test_biski64 ... ok
+test prng::b32::pcg::advance_tests::advance_equals_stepping ... ok
+test prng::b32::xoshiro::tests::test_xoshiro128_pp ... ok
+test prng::b64::cet::tests::test_cet64 ... ok
+test prng::b64::cet::tests::cet64_matches_independent_formula ... ok
+test prng::b64::cet::tests::test_cet256 ... ok
+test prng::b64::mersenne::tests::test_mt1993764 ... ok
+test prng::b64::mersenne::tests::test_sfmt1993764 ... ok
+test prng::b64::mersenne::tests::mt1993764_reference_seeding ... ok
+test prng::b64::sfc::tests::test_sfc64 ... ok
+test prng::b32::jsf::tests::jsf32_matches_reference ... ok
+test prng::b64::splitmix::tests::test_split_mix64 ... ok
+test prng::b32::xorshift::tests::xorshift128_matches_reference ... ok
+test prng::b64::twisted_gfsr::tests::nextu_is_two_raw_outputs ... ok
+test prng::b64::twisted_gfsr::tests::test_twisted_g_f_s_r ... ok
+test prng::b64::sfc::tests::sfc64_practrand_vector ... ok
+test prng::b32::xorshift::tests::xorshift32x8_lanes_match_scalar ... ok
+test prng::b64::wyhash::tests::test_wy_hash64 ... ok
+test prng::b64::biski::tests::biski64x8_lanes_match_scalar ... ok
+test prng::b64::twisted_gfsr::tests::tt800_matches_reference ... ok
+test prng::b64::xoroshiro::tests::test_xoroshiro128_ss ... ok
+test prng::b64::xoroshiro::tests::test_xoroshiro128_pp ... ok
+test prng::b64::xorshift::tests::test_xorshift64 ... ok
+test prng::b64::xorshift::tests::xorshift64_has_no_all_zero_seed ... ok
+test prng::b64::xoshiro::tests::test_xoshiro256_pp ... ok
+test prng::b64::xoshiro::tests::test_xoshiro256_ss ... ok
+test prng::b32::pcg::tests::pcg32x8_lanes_match_scalar_and_have_odd_increments ... ok
+test rand::b32::tests::cipher_seed_is_the_key ... ok
+test prng::b64::xoshiro::tests::xoshiro256_reference_vectors ... ok
+test rand::b32::tests::philox32_works ... ok
+test rand::b32::tests::rand32_conventions ... ok
+test rand::b32::tests::sfmt19937_works ... ok
+test rand::b64::tests::rand64_conventions ... ok
+test rng::tests::full_range_randi_does_not_overflow ... ok
+test prng::b64::sfc::tests::sfc64x8_lanes_match_scalar ... ok
+test rng::tests::randf_is_strictly_below_max ... ok
+test prng::b32::xoroshiro::tests::xoroshiro64ss_matches_reference ... ok
+test rng::tests::randi_rejects_inverted_range - should panic ... ok
+test rng::tests::to_index_handles_huge_lengths ... ok
+test rng::tests::rejection_redraws_and_accepts_multiply_shift ... ok
+test rngv::tests::to_randi_matches_scalar_for_all_widths ... ok
+test cbrng::b32::philox::tests::philox32x4x4_lanes_match_reference ... ok
+test sampler::b32::alias::tests::alias32_works ... ok
+test sampler::b32::alias::tests::alias32_rejects_empty_weights - should panic ... ok
+test sampler::b32::bst::tests::bst32_rejects_all_zero_weights - should panic ... ok
+test sampler::b32::bst::tests::bst32_rejects_empty_weights - should panic ... ok
+test rng::tests::to_index_uniform_rejects_like_randi ... ok
+test sampler::b32::bst::tests::bst32_rejects_negative_weights - should panic ... ok
+test sampler::b32::bst::tests::bst32_works ... ok
+test sampler::b64::alias::tests::alias64_rejects_empty_weights - should panic ... ok
+test prng::b64::twisted_gfsr::tests::full_width_words_make_choice_and_shuffle_work ... ok
+test sampler::b64::bst::tests::bst64_rejects_all_zero_weights - should panic ... ok
+test sampler::b64::bst::tests::bst64_rejects_empty_weights - should panic ... ok
+test sampler::b64::bst::tests::bst64_rejects_negative_weights - should panic ... ok
+test prng::b64::xoroshiro::tests::steps_match_reference ... ok
+test shuffle::tests::shuffle_edge_lengths ... ok
+test prng::b32::jsf::tests::jsf32_simd_lanes_match_scalar ... ok
+test sampler::b64::bst::tests::bst64_never_selects_zero_weight_at_a_boundary ... ok
+test prng::b32::splitmix::tests::splitmix32x16_matches_reference_stream ... ok
+test sampler::b64::alias::tests::alias64_never_selects_zero_weight ... ok
+test sampler::b32::bst::tests::bst32_never_selects_zero_weight_at_a_boundary ... ok
+test wide::jsf::tests::test_jsf32x16 ... ok
+test wide::jsf::tests::test_jsf32x4 ... ok
+test wide::jsf::tests::test_jsf32x8 ... ok
+test wide::pcg::tests::test_pcg32x16 ... ok
+test wide::pcg::tests::test_pcg32x8 ... ok
+test wide::pcg::tests::test_pcg32x4 ... ok
+test wide::sfc::tests::test_sfc32x16 ... ok
+test wide::sfc::tests::test_sfc32x4 ... ok
+test wide::sfc::tests::test_sfc32x8 ... ok
+test wide::splitmix::tests::test_split_mix32x16 ... ok
+test wide::splitmix::tests::test_split_mix32x4 ... ok
+test wide::splitmix::tests::test_split_mix32x8 ... ok
+test wide::squares::tests::test_squares32x8 ... ok
+test wide::threefry::tests::test_threefry32x2x16 ... ok
+test wide::threefry::tests::test_threefry32x2x4 ... ok
+test wide::threefry::tests::test_threefry32x2x8 ... ok
+test wide::threefry::tests::test_threefry32x4x16 ... ok
+test wide::threefry::tests::test_threefry32x4x4 ... ok
+test prng::b32::sfc::tests::sfc32_wide_simd_lanes_match_scalar ... ok
+test sampler::b32::alias::tests::alias32_never_selects_zero_weight ... ok
+test wide::wrng::tests::seed_and_default_are_wired ... ok
+test wide::xoroshiro::tests::test_xoroshiro64_ssx16 ... ok
+test wide::squares::tests::test_squares32x4 ... ok
+test wide::threefry::tests::test_threefry32x4x8 ... ok
+test wide::xoroshiro::tests::test_xoroshiro64_ssx4 ... ok
+test wide::xoroshiro::tests::test_xoroshiro64_ssx8 ... ok
+test wide::xorshift::tests::test_xorshift128x16 ... ok
+test wide::xorshift::tests::test_xorshift128x4 ... ok
+test wide::xorshift::tests::test_xorshift128x8 ... ok
+test wide::xorshift::tests::test_xorshift32x16 ... ok
+test wide::xorshift::tests::test_xorshift32x4 ... ok
+test prng::b64::xoshiro::tests::xoshiro256ssx2_lanes_match_scalar ... ok
+test wide::xorshift::tests::test_xorshift32x8 ... ok
+test wide::xorshift::tests::test_xorwowx16 ... ok
+test wide::xorshift::tests::test_xorwowx4 ... ok
+test wide::xorshift::tests::test_xorwowx8 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ppx16 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ppx4 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ppx8 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ssx16 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ssx4 ... ok
+test wide::xoshiro::tests::test_xoshiro128_ssx8 ... ok
+test wide::splitmix::tests::wide_splitmix_lanes_interleave_one_stream ... ok
+test cbrng::b32::squares::tests::squares32x8_lanes_match_scalar ... ok
+test prng::b32::xoroshiro::tests::xoroshiro64ss_simd_lanes_match_scalar ... ok
+test sampler::b64::bst::tests::bst64_works ... ok
+test sampler::b64::alias::tests::alias64_works ... ok
+test rng::tests::randi_is_uniform_for_awkward_ranges ... ok
+test prng::b64::cet::tests::cet_simd_lanes_match_scalar ... ok
+test prng::b64::xoroshiro::tests::engines_have_full_period_and_jumps_are_exact ... ok
+test shuffle::tests::shuffled_is_uniform ... ok
+test shuffle::tests::shuffle_is_uniform ... ok
+
+test result: ok. 172 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.41s
+
+     Running tests\cabi_bulk.rs (D:\.repo\urng-review\reviewers\astra\opus\target\debug\deps\cabi_bulk-38f6e02f9ead4c02.exe)
+
+running 13 tests
+test null_and_empty_buffers_are_accepted ... ok
+test simd_full_range_rand_i32s_is_not_constant ... ok
+test advanceable_bulk_equals_sequential_stream ... ok
+test squares_bulk_equals_sequential_stream ... ok
+test philox32x4x4_bulk_equals_sequential_blocks ... ok
+test philox32_bulk_equals_sequential_stream ... ok
+test xoshiro256ssx2_bulk_is_sequential_and_does_not_collapse ... ok
+test xoroshiro64ss_bulk_chunks_are_distinct ... ok
+test c_abi_float_ranges_exclude_max ... ok
+test c_abi_integer_ranges ... ok
+test simd64_bulk_fills_have_no_duplicates_across_chunks ... ok
+test counter_mode_bulk_equals_sequential_stream ... ok
+test repeated_small_calls_do_not_repeat_blocks ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.97s
+
+     Running tests\packaging.rs (D:\.repo\urng-review\reviewers\astra\opus\target\debug\deps\packaging-724255b987cdead3.exe)
+
+running 1 test
+test lib_doc_include_path_matches_file_case_exactly ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\readme_types.rs (D:\.repo\urng-review\reviewers\astra\opus\target\debug\deps\readme_types-77a15562f78d08e6.exe)
+
+running 1 test
+test readme_types_exist ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\seeding.rs (D:\.repo\urng-review\reviewers\astra\opus\target\debug\deps\seeding-1d72ad97e9ce8ebd.exe)
+
+running 5 tests
+test twisted_gfsr_uses_all_64_seed_bits ... ok
+test splitmix64_matches_reference_for_every_seed ... ok
+test adjacent_seeds_give_different_streams_wide ... ok
+test adjacent_seeds_give_different_streams_64 ... ok
+test adjacent_seeds_give_different_streams_32 ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\source_invariants.rs (D:\.repo\urng-review\reviewers\astra\opus\target\debug\deps\source_invariants-e94d7ac7369d7b50.exe)
+
+running 4 tests
+test csbindgen_inputs_define_c_abi_functions_literally ... ok
+test every_nt_store_is_fenced ... ok
+test no_avx512vl_256bit_intrinsics ... ok
+test pointer_taking_c_abi_functions_are_unsafe ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+   Doc-tests urng
+
+running 114 tests
+test src\../README.md - (line 181) ... ignored
+test src\../README.md - (line 89) ... ignored
+test src\cbrng\b32\philox.rs - cbrng::b32::philox::Philox32x4x4 (line 118) - compile ... ok
+test src\cbrng\b32\squares.rs - cbrng::b32::squares::simd::Squares32x8 (line 92) - compile ... ok
+test src\prng\b32\jsf.rs - prng::b32::jsf::simd::Jsf32x16 (line 168) - compile ... ok
+test src\prng\b32\jsf.rs - prng::b32::jsf::simd::Jsf32x8 (line 75) - compile ... ok
+test src\../README.md - (line 203) ... ok
+test src\../README.md - (line 212) ... ok
+test src\cbrng\b32\philox.rs - cbrng::b32::philox::Philox32 (line 21) ... ok
+test src\cbrng\b32\squares.rs - cbrng::b32::squares::Squares32 (line 11) ... ok
+test src\crng\b32\salsa.rs - crng::b32::salsa::Salsa (line 18) ... ok
+test src\cbrng\b32\threefry.rs - cbrng::b32::threefry::Threefry32x4 (line 18) ... ok
+test src\cbrng\b32\threefry.rs - cbrng::b32::threefry::Threefry32x2 (line 159) ... ok
+test src\cbrng\b64\philox.rs - cbrng::b64::philox::Philox4x64 (line 107) ... ok
+test src\cbrng\b64\philox.rs - cbrng::b64::philox::Philox64 (line 16) ... ok
+test src\cbrng\b64\threefish.rs - cbrng::b64::threefish::Threefish256 (line 46) ... ok
+test src\crng\b32\chacha.rs - crng::b32::chacha::ChaCha (line 21) ... ok
+test src\prng\b32\pcg.rs - prng::b32::pcg::simd::Pcg32x8 (line 92) - compile ... ok
+test src\prng\b32\jsf.rs - prng::b32::jsf::Jsf32 (line 8) ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::simd::Sfc32x16 (line 280) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Mt19937 (line 65) ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::simd::Sfc32x8 (line 180) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Mt19937::from_init_genrand (line 116) ... ok
+test src\prng\b32\splitmix.rs - prng::b32::splitmix::simd::SplitMix32x16 (line 83) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt11213 (line 448) ... ok
+test src\prng\b32\xoroshiro.rs - prng::b32::xoroshiro::simd::Xoroshiro64Ssx16 (line 160) - compile ... ok
+test src\prng\b32\xoroshiro.rs - prng::b32::xoroshiro::simd::Xoroshiro64Ssx8 (line 79) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt1279 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt132049 (line 448) ... ok
+test src\prng\b32\xorshift.rs - prng::b32::xorshift::simd::Xorshift32x8 (line 125) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt19937 (line 213) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt19937::from_init_gen_rand (line 244) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt216091 (line 448) ... ok
+test src\prng\b32\xorwow.rs - prng::b32::xorwow::Xorwow (line 12) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::simd::Xoshiro128Ssx16 (line 251) - compile ... ok
+test src\prng\b32\xorshift.rs - prng::b32::xorshift::Xorshift32 (line 16) ... ok
+test src\prng\b64\biski.rs - prng::b64::biski::simd::Biski64x8 (line 64) - compile ... ok
+test src\prng\b32\xorshift.rs - prng::b32::xorshift::Xorshift128 (line 65) ... ok
+test src\prng\b32\xoroshiro.rs - prng::b32::xoroshiro::Xoroshiro64Ss (line 10) ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::Sfc32 (line 8) ... ok
+test src\prng\b32\sfc.rs - prng::b32::sfc::simd::Sfc32x4 (line 80) ... ok
+test src\prng\b32\splitmix.rs - prng::b32::splitmix::SplitMix32 (line 11) ... ok
+test src\prng\b32\pcg.rs - prng::b32::pcg::Pcg32 (line 12) ... ok
+test src\prng\b64\sfc.rs - prng::b64::sfc::simd::Sfc64x8 (line 71) - compile ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt44497 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt607 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt4253 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt86243 (line 448) ... ok
+test src\prng\b32\mersenne.rs - prng::b32::mersenne::Sfmt2281 (line 448) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::Xoshiro128Pp (line 13) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::Xoshiro128Ss (line 79) ... ok
+test src\prng\b32\xoshiro.rs - prng::b32::xoshiro::simd::Xoshiro128Ppx16 (line 150) ... ok
+test src\prng\b64\biski.rs - prng::b64::biski::Biski64 (line 8) ... ok
+test src\prng\b64\cet.rs - prng::b64::cet::Cet256 (line 56) ... ok
+test src\prng\b64\xoshiro.rs - prng::b64::xoshiro::Xoshiro256Pp (line 9) ... ok
+test src\prng\b64\cet.rs - prng::b64::cet::Cet64 (line 9) ... ok
+test src\prng\b64\xoshiro.rs - prng::b64::xoshiro::Xoshiro256Ss (line 59) ... ok
+test src\prng\b64\xoroshiro.rs - prng::b64::xoroshiro::Xoroshiro128Ss (line 85) ... ok
+test src\prng\b64\xoroshiro.rs - prng::b64::xoroshiro::Xoroshiro128Pp (line 26) ... ok
+test src\prng\b64\wyhash.rs - prng::b64::wyhash::WyHash64 (line 8) ... ok
+test src\prng\b64\xorshift.rs - prng::b64::xorshift::Xorshift64 (line 11) ... ok
+test src\prng\b64\twisted_gfsr.rs - prng::b64::twisted_gfsr::TwistedGFSR (line 13) ... ok
+test src\prng\b64\splitmix.rs - prng::b64::splitmix::SplitMix64 (line 8) ... ok
+test src\prng\b64\sfc.rs - prng::b64::sfc::Sfc64 (line 11) ... ok
+test src\prng\b64\mersenne.rs - prng::b64::mersenne::Sfmt1993764 (line 192) ... ok
+test src\wide\mod.rs - wide (line 11) ... ok
+test src\prng\b64\mersenne.rs - prng::b64::mersenne::Mt1993764 (line 65) ... ok
+test src\prng\b64\xoshiro.rs - prng::b64::xoshiro::simd::Xoshiro256Ssx2 (line 123) ... ok
+test src\sampler.rs - sampler::Sampler (line 19) ... ok
+test src\sampler\b32\alias.rs - sampler::b32::alias::Alias32 (line 10) ... ok
+test src\sampler\b32\bst.rs - sampler::b32::bst::Bst32 (line 8) ... ok
+test src\sampler\b64\alias.rs - sampler::b64::alias::Alias64 (line 10) ... ok
+test src\sampler\b64\bst.rs - sampler::b64::bst::Bst64 (line 8) ... ok
+test src\seedgen.rs - seedgen (line 12) ... ok
+test src\seedgen.rs - seedgen::SeedGen (line 96) ... ok
+test src\wide\jsf.rs - wide::jsf::Jsf32x16 (line 15) ... ok
+test src\wide\jsf.rs - wide::jsf::Jsf32x4 (line 15) ... ok
+test src\wide\jsf.rs - wide::jsf::Jsf32x8 (line 15) ... ok
+test src\prng\b64\mersenne.rs - prng::b64::mersenne::Mt1993764::from_init_genrand64 (line 99) ... ok
+test src\wide\pcg.rs - wide::pcg::Pcg32x16 (line 75) ... ok
+test src\wide\pcg.rs - wide::pcg::Pcg32x4 (line 15) ... ok
+test src\wide\pcg.rs - wide::pcg::Pcg32x8 (line 15) ... ok
+test src\wide\sfc.rs - wide::sfc::Sfc32x16 (line 15) ... ok
+test src\wide\sfc.rs - wide::sfc::Sfc32x4 (line 15) ... ok
+test src\wide\sfc.rs - wide::sfc::Sfc32x8 (line 15) ... ok
+test src\wide\splitmix.rs - wide::splitmix::SplitMix32x16 (line 15) ... ok
+test src\wide\splitmix.rs - wide::splitmix::SplitMix32x4 (line 15) ... ok
+test src\wide\splitmix.rs - wide::splitmix::SplitMix32x8 (line 15) ... ok
+test src\wide\squares.rs - wide::squares::Squares32x4 (line 16) ... ok
+test src\wide\squares.rs - wide::squares::Squares32x8 (line 16) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x2x16 (line 18) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x2x4 (line 18) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x2x8 (line 18) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x4x16 (line 137) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x4x4 (line 137) ... ok
+test src\wide\threefry.rs - wide::threefry::Threefry32x4x8 (line 137) ... ok
+test src\wide\xoroshiro.rs - wide::xoroshiro::Xoroshiro64Ssx16 (line 15) ... ok
+test src\wide\xoroshiro.rs - wide::xoroshiro::Xoroshiro64Ssx4 (line 15) ... ok
+test src\wide\xoroshiro.rs - wide::xoroshiro::Xoroshiro64Ssx8 (line 15) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift128x16 (line 71) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift128x4 (line 71) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift128x8 (line 71) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift32x16 (line 15) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift32x4 (line 15) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorshift32x8 (line 15) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorwowx16 (line 138) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorwowx4 (line 138) ... ok
+test src\wide\xorshift.rs - wide::xorshift::Xorwowx8 (line 138) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ppx16 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ppx4 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ppx8 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ssx16 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ssx4 (line 18) ... ok
+test src\wide\xoshiro.rs - wide::xoshiro::Xoshiro128Ssx8 (line 18) ... ok
+
+test result: ok. 112 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+all doctests ran in 0.95s; merged doctests compilation took 0.68s
+
+EXIT=0 ELAPSED=40.674s

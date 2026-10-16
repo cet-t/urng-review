@@ -1,0 +1,28 @@
+cwd: D:\.repo\urng-review\reviewers\astra\opus\work\source
+command: ["dotnet", "build", "..\\csharp\\binding_check.csproj", "--ignore-failed-sources", "--verbosity", "quiet"]
+'D:\.repo\urng-review\reviewers\astra\opus\work\dotnet-home\.dotnet\tools' を PATH 環境変数に追加できませんでした。'dotnet tool install' でインストールしたツールを使用するには、このディレクトリを PATH に追加します。
+
+.NET 10.0 へようこそ!
+---------------------
+SDK バージョン: 10.0.401
+
+----------------
+ASP.NET Core HTTPS 開発証明書をインストールしました。
+証明書を信頼するには、'dotnet dev-certs https --trust' を実行します
+HTTPS の詳細情報: https://aka.ms/dotnet-https
+
+----------------
+最初のアプリを作成するには、https://aka.ms/dotnet-hello-world を参照してください
+最新情報については、https://aka.ms/dotnet-whats-new を参照してください
+ドキュメントを探すには、https://aka.ms/dotnet-docs を参照してください
+GitHub で問題の報告とソースの検索を行うには、https://github.com/dotnet/core を参照してください
+'dotnet --help' を使用して使用可能なコマンドを確認するか、https://aka.ms/dotnet-cli にアクセスしてください
+--------------------------------------------------------------------------------------
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:04.28
+
+EXIT=0 ELAPSED=4.602s

@@ -1,0 +1,171 @@
+{
+  "benchmark": {
+    "scalar_splitmix64": {
+      "current": {
+        "median": 0.068092,
+        "min": 0.067735,
+        "max": 0.071263,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.067878,
+        "min": 0.067782,
+        "max": 0.07093,
+        "trials": 7
+      },
+      "time_ratio": 1.003152715165444
+    },
+    "scalar_threefry4": {
+      "current": {
+        "median": 2.176881,
+        "min": 2.174044,
+        "max": 2.181745,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 2.272439,
+        "min": 2.270317,
+        "max": 2.274823,
+        "trials": 7
+      },
+      "time_ratio": 0.9579491462697128
+    },
+    "wide_splitmix32x8": {
+      "current": {
+        "median": 0.073409,
+        "min": 0.072575,
+        "max": 0.074387,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.07298,
+        "min": 0.072718,
+        "max": 0.073409,
+        "trials": 7
+      },
+      "time_ratio": 1.005878322828172
+    },
+    "wide_sfc32x8": {
+      "current": {
+        "median": 0.14677,
+        "min": 0.145984,
+        "max": 0.147152,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.146818,
+        "min": 0.146556,
+        "max": 0.147557,
+        "trials": 7
+      },
+      "time_ratio": 0.9996730646106063
+    },
+    "wide_sfc32x8_randi10": {
+      "current": {
+        "median": 0.165296,
+        "min": 0.162482,
+        "max": 0.168395,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.166535,
+        "min": 0.163221,
+        "max": 0.168276,
+        "trials": 7
+      },
+      "time_ratio": 0.9925601224967725
+    },
+    "simd_sfc64x8": {
+      "current": {
+        "median": 0.148058,
+        "min": 0.146818,
+        "max": 0.148869,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.14317,
+        "min": 0.142956,
+        "max": 0.143814,
+        "trials": 7
+      },
+      "time_ratio": 1.0341412307047566
+    },
+    "scalar_sfc32_randi10": {
+      "current": {
+        "median": 1.116157,
+        "min": 1.109385,
+        "max": 1.123977,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.986433,
+        "min": 0.985742,
+        "max": 0.987554,
+        "trials": 7
+      },
+      "time_ratio": 1.1315081713608528
+    },
+    "cabi_splitmix32_32MiB": {
+      "current": {
+        "median": 0.150383,
+        "min": 0.148606,
+        "max": 0.15527,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.149393,
+        "min": 0.148213,
+        "max": 0.151813,
+        "trials": 7
+      },
+      "time_ratio": 1.0066268165175074
+    },
+    "cabi_threefry4_32MiB": {
+      "current": {
+        "median": 0.150752,
+        "min": 0.150061,
+        "max": 0.158286,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.151086,
+        "min": 0.146532,
+        "max": 0.171947,
+        "trials": 7
+      },
+      "time_ratio": 0.9977893385224309
+    },
+    "cabi_sfc32_32MiB": {
+      "current": {
+        "median": 0.157726,
+        "min": 0.150013,
+        "max": 0.178027,
+        "trials": 7
+      },
+      "baseline": {
+        "median": 0.166297,
+        "min": 0.150251,
+        "max": 0.188243,
+        "trials": 7
+      },
+      "time_ratio": 0.9484596835781764
+    }
+  },
+  "tests": {
+    "existing-full": {
+      "passed": 308,
+      "failed": 0,
+      "ignored": 2
+    },
+    "existing-native": {
+      "passed": 308,
+      "failed": 0,
+      "ignored": 2
+    },
+    "independent-final": {
+      "passed": 15,
+      "failed": 9,
+      "ignored": 0
+    }
+  }
+}
