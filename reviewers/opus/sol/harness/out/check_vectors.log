@@ -1,0 +1,64 @@
+﻿PASS MT19937 init_by_array 1000
+PASS MT19937 seed 5489 first
+PASS MT19937-64 init_by_array 1000
+PASS SFMT-607 parameter header
+PASS SFMT-607 init_gen_rand(1234) 1000
+PASS SFMT-1279 parameter header
+PASS SFMT-1279 init_gen_rand(1234) 1000
+PASS SFMT-2281 parameter header
+PASS SFMT-2281 init_gen_rand(1234) 1000
+PASS SFMT-4253 parameter header
+PASS SFMT-4253 init_gen_rand(1234) 1000
+PASS SFMT-11213 parameter header
+PASS SFMT-11213 init_gen_rand(1234) 1000
+PASS SFMT-19937 parameter header
+PASS SFMT-19937 init_gen_rand(1234) 1000
+PASS SFMT-44497 parameter header
+PASS SFMT-44497 init_gen_rand(1234) 1000
+PASS SFMT-86243 parameter header
+PASS SFMT-86243 init_gen_rand(1234) 1000
+PASS SFMT-132049 parameter header
+PASS SFMT-132049 init_gen_rand(1234) 1000
+PASS SFMT-216091 parameter header
+PASS SFMT-216091 init_gen_rand(1234) 1000
+PASS philox4x32-10 00000000
+PASS philox4x32-10 ffffffff
+PASS philox4x32-10 243f6a88
+PASS philox4x32-7 00000000
+PASS philox4x32-7 ffffffff
+PASS philox4x32-7 243f6a88
+PASS philox2x64-10 0000000000000000
+PASS philox2x64-10 ffffffffffffffff
+PASS philox2x64-10 243f6a8885a308d3
+PASS philox4x64-10 0000000000000000
+PASS philox4x64-10 ffffffffffffffff
+PASS philox4x64-10 243f6a8885a308d3
+PASS threefry2x32-20 00000000
+PASS threefry2x32-20 ffffffff
+PASS threefry2x32-20 243f6a88
+PASS threefry2x32-13 00000000
+PASS threefry2x32-13 ffffffff
+PASS threefry2x32-13 243f6a88
+PASS threefry4x32-20 00000000
+PASS threefry4x32-20 ffffffff
+PASS threefry4x32-20 243f6a88
+PASS threefry4x32-72 00000000
+PASS threefry4x32-72 ffffffff
+PASS threefry4x32-72 243f6a88
+PASS threefry4x64-72 (=Threefish-256, tweak 0) 0000000000000000
+PASS threefry4x64-72 (=Threefish-256, tweak 0) ffffffffffffffff
+PASS threefry4x64-72 (=Threefish-256, tweak 0) 243f6a8885a308d3
+PASS Threefish-256 KAT zero
+PASS Threefish-256 KAT 2
+PASS ChaCha20 RFC8439 2.3.2 block
+PASS Salsa20/8 core RFC7914
+PASS scrypt(Salsa20/8 core) vs OpenSSL pw=b''
+PASS scrypt(Salsa20/8 core) vs OpenSSL pw=b'password'
+PASS scrypt(Salsa20/8 core) vs OpenSSL pw=b'urng-review'
+PASS PCG32 demo round 1
+PASS xoroshiro128++ jump == T^(2^64)
+PASS xoroshiro128++ long_jump == T^(2^96)
+PASS xoroshiro128** jump == T^(2^64)
+PASS xoroshiro128** long_jump == T^(2^96)
+
+62 passed, 0 failed

@@ -1,0 +1,56 @@
+﻿PASS xoshiro128plusplus.c trial 0 outputs
+PASS xoshiro128plusplus.c trial 1 outputs
+PASS xoshiro128plusplus.c trial 2 outputs
+PASS xoshiro128plusplus.c trial 3 outputs
+PASS xoshiro128plusplus.c trial 4 outputs
+PASS xoshiro128starstar.c trial 0 outputs
+PASS xoshiro128starstar.c trial 1 outputs
+PASS xoshiro128starstar.c trial 2 outputs
+PASS xoshiro128starstar.c trial 3 outputs
+PASS xoshiro128starstar.c trial 4 outputs
+PASS xoshiro256plusplus.c trial 0 outputs
+PASS xoshiro256plusplus.c trial 1 outputs
+PASS xoshiro256plusplus.c trial 2 outputs
+PASS xoshiro256plusplus.c trial 3 outputs
+PASS xoshiro256plusplus.c trial 4 outputs
+PASS xoshiro256starstar.c trial 0 outputs
+PASS xoshiro256starstar.c trial 1 outputs
+PASS xoshiro256starstar.c trial 2 outputs
+PASS xoshiro256starstar.c trial 3 outputs
+PASS xoshiro256starstar.c trial 4 outputs
+PASS xoroshiro64starstar.c trial 0 outputs
+PASS xoroshiro64starstar.c trial 1 outputs
+PASS xoroshiro64starstar.c trial 2 outputs
+PASS xoroshiro64starstar.c trial 3 outputs
+PASS xoroshiro64starstar.c trial 4 outputs
+PASS xoroshiro128plusplus.c trial 0 outputs
+PASS xoroshiro128plusplus.c trial 0 jump == T^(2^64)
+PASS xoroshiro128plusplus.c trial 0 long_jump == T^(2^96)
+PASS xoroshiro128plusplus.c trial 1 outputs
+PASS xoroshiro128plusplus.c trial 1 jump == T^(2^64)
+PASS xoroshiro128plusplus.c trial 1 long_jump == T^(2^96)
+PASS xoroshiro128plusplus.c trial 2 outputs
+PASS xoroshiro128plusplus.c trial 2 jump == T^(2^64)
+PASS xoroshiro128plusplus.c trial 2 long_jump == T^(2^96)
+PASS xoroshiro128plusplus.c trial 3 outputs
+PASS xoroshiro128plusplus.c trial 3 jump == T^(2^64)
+PASS xoroshiro128plusplus.c trial 3 long_jump == T^(2^96)
+PASS xoroshiro128plusplus.c trial 4 outputs
+PASS xoroshiro128plusplus.c trial 4 jump == T^(2^64)
+PASS xoroshiro128plusplus.c trial 4 long_jump == T^(2^96)
+PASS xoroshiro128starstar.c trial 0 outputs
+PASS xoroshiro128starstar.c trial 0 jump == T^(2^64)
+PASS xoroshiro128starstar.c trial 0 long_jump == T^(2^96)
+PASS xoroshiro128starstar.c trial 1 outputs
+PASS xoroshiro128starstar.c trial 1 jump == T^(2^64)
+PASS xoroshiro128starstar.c trial 1 long_jump == T^(2^96)
+PASS xoroshiro128starstar.c trial 2 outputs
+PASS xoroshiro128starstar.c trial 2 jump == T^(2^64)
+PASS xoroshiro128starstar.c trial 2 long_jump == T^(2^96)
+PASS xoroshiro128starstar.c trial 3 outputs
+PASS xoroshiro128starstar.c trial 3 jump == T^(2^64)
+PASS xoroshiro128starstar.c trial 3 long_jump == T^(2^96)
+PASS xoroshiro128starstar.c trial 4 outputs
+PASS xoroshiro128starstar.c trial 4 jump == T^(2^64)
+PASS xoroshiro128starstar.c trial 4 long_jump == T^(2^96)
+fails 0

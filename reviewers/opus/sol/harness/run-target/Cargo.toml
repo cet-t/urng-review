@@ -1,0 +1,35 @@
+﻿[package]
+name = "opus-review-harness"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[workspace]
+
+[features]
+default = ["simd"]
+simd = []
+# reviewed-variant switches for the few public API differences
+v_sol = []
+v_astra = []
+
+[dependencies]
+urng = { path = "../_src", features = ["full"] }
+pastey = "0.2"
+
+[[bin]]
+name = "dump"
+path = "../common/dump.rs"
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[[bin]]
+name = "cabi"
+path = "../common/cabi.rs"
+
+
+[[bin]]
+name = "probe"
+path = "../common/probe.rs"
