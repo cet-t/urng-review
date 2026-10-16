@@ -1,0 +1,30 @@
+﻿[package]
+name = "opus-review-harness-base"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[workspace]
+
+[features]
+default = ["simd"]
+simd = []
+v_base = []
+
+[dependencies]
+urng = { path = "../_base", features = ["full"] }
+
+[[bin]]
+name = "bench"
+path = "../common/bench.rs"
+
+[profile.release]
+opt-level = 3
+debug = false
+
+# same codegen settings as urng's own [profile.release] (used for the shipped cdylib)
+[profile.lto]
+inherits = "release"
+lto = "fat"
+codegen-units = 1
+

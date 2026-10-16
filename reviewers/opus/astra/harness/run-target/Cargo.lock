@@ -83,6 +83,7 @@ name = "opus-review-harness"
 version = "0.1.0"
 dependencies = [
  "pastey",
+ "rand_core",
  "urng",
 ]
 

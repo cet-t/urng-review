@@ -1,0 +1,11 @@
+﻿index(0x1) 32-bit+64-bit word: in range=true; 32-bit max seen=0x0
+index(0x2) 32-bit+64-bit word: in range=true; 32-bit max seen=0x1
+index(0x3) 32-bit+64-bit word: in range=true; 32-bit max seen=0x2
+index(0x3e8) 32-bit+64-bit word: in range=true; 32-bit max seen=0x3e7
+index(0xffffffff) 32-bit+64-bit word: in range=true; 32-bit max seen=0xffffa9a1
+index(0x100000000) 32-bit+64-bit word: in range=true; 32-bit max seen=0xffffd708
+index(0x100000001) 32-bit+64-bit word: in range=true; 32-bit max seen=0xffffcaf7
+index(0x8000000000000000) 32-bit+64-bit word: in range=true; 32-bit max seen=0x7ffffda4b020a265
+index(0xffffffffffffffff) 32-bit+64-bit word: in range=true; 32-bit max seen=0xffffe7632f5b735e
+index(2^40) with 32-bit word reaches >= 2^32: true
+index(3) exhaustive: buckets=[1431655765, 1431655765, 1431655765] rejected=1 (expect each 1431655765 and 1 rejected)

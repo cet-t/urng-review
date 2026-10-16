@@ -107,10 +107,78 @@ fn xorshift32_zero() {
     }
 }
 
+/// Minimal weighted-sampler reproductions with small integer weights.
+fn alias_small() {
+    for w in [vec![2.0f32, 2.0, 3.0], vec![1.0, 1.0, 11.0], vec![1.0, 5.0, 7.0]] {
+        let total: f32 = w.iter().sum();
+        let n = 1_000_000;
+        let mut rng = Sfc32::new(1);
+        let mut s = Alias32::new(&mut rng, &w);
+        let mut c = vec![0usize; w.len()];
+        for _ in 0..n {
+            c[s.sample()] += 1;
+        }
+        let f: Vec<f64> = c.iter().map(|&x| (x as f64 / n as f64 * 1e4).round() / 1e4).collect();
+        let e: Vec<f64> = w.iter().map(|&x| ((x / total) as f64 * 1e4).round() / 1e4).collect();
+        println!("Alias32 {w:?}: observed {f:?} expected {e:?}");
+        let w64: Vec<f64> = w.iter().map(|&x| x as f64).collect();
+        let mut rng = Sfc64::new(1);
+        let mut s = Alias64::new(&mut rng, &w64);
+        let mut c = vec![0usize; w.len()];
+        for _ in 0..n {
+            c[s.sample()] += 1;
+        }
+        let f: Vec<f64> = c.iter().map(|&x| (x as f64 / n as f64 * 1e4).round() / 1e4).collect();
+        println!("Alias64 {w64:?}: observed {f:?}");
+    }
+}
+
+/// ChaCha/Salsa block counter exhaustion behaviour.
+fn cipher_exhaust() {
+    let key = [7u8; 32];
+    let mut c = ChaCha20::from_key_nonce(key, [0; 12], u32::MAX);
+    for _ in 0..16 {
+        let _ = c.nextu();
+    }
+    let r = std::panic::catch_unwind(std::panic::AssertUnwindSafe(move || c.nextu()));
+    println!("ChaCha20 after the u32::MAX block: {}", if r.is_err() { "panic" } else { "continues" });
+    let mut s = Salsa20::from_key_nonce(key, [0; 8], u64::MAX);
+    for _ in 0..16 {
+        let _ = s.nextu();
+    }
+    let r = std::panic::catch_unwind(std::panic::AssertUnwindSafe(move || s.nextu()));
+    println!("Salsa20 after the u64::MAX block: {}", if r.is_err() { "panic" } else { "continues" });
+}
+
+/// wide::Threefry32x2x4: does the per-lane 64-bit counter carry, or does the
+/// stream repeat after 2^32 blocks (2^33 calls)?
+fn threefry_wrap() {
+    use std::hint::black_box;
+    use urng::wide::RngW;
+    let t = std::time::Instant::now();
+    let mut r = urng::wide::Threefry32x2x4::new(7);
+    let first: Vec<[u32; 4]> = (0..4).map(|_| r.nextu()).collect(); // blocks 0 and 1
+    let skip = (1u64 << 33) - 4; // advance to block 2^32
+    for _ in 0..skip {
+        black_box(r.nextu());
+    }
+    let again: Vec<[u32; 4]> = (0..4).map(|_| r.nextu()).collect(); // blocks 2^32, 2^32+1
+    println!(
+        "wide::Threefry32x2x4::new(7): blocks [2^32, 2^32+1] == blocks [0, 1]: {} ({:.1} s)",
+        first == again,
+        t.elapsed().as_secs_f64()
+    );
+    println!("  first  = {:08x?}", first);
+    println!("  after  = {:08x?}", again);
+}
+
 fn main() {
     match std::env::args().nth(1).as_deref() {
+        Some("threefry_wrap") => threefry_wrap(),
         Some("seed_pairs") => seed_pairs(),
         Some("xorshift32_zero") => xorshift32_zero(),
+        Some("alias_small") => alias_small(),
+        Some("cipher_exhaust") => cipher_exhaust(),
         other => panic!("unknown probe {other:?}"),
     }
 }

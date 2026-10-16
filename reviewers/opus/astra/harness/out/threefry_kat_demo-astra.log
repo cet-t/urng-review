@@ -1,0 +1,13 @@
+﻿Threefry32x4::new(0) first block: ['0xadac674d', '0x893a65e2', '0x90317864', '0xaa2cae8b']
+   Random123 threefry4x32-20(ctr=0, key) : ['0xbce7d479', '0x9f84e6fa', '0x8f889494', '0xd5aa49f0']  match=False
+   1.0.0 tweak+XOR variant               : ['0xadac674d', '0x893a65e2', '0x90317864', '0xaa2cae8b']  match=True
+Threefry32x4::new(1) first block: ['0xcdabd43', '0xf1359c61', '0xd1fb730d', '0xcbc3a34b']
+   Random123 threefry4x32-20(ctr=0, key) : ['0xf7b72827', '0xeb06ca53', '0x3db80c5f', '0xf0a68590']  match=False
+   1.0.0 tweak+XOR variant               : ['0xcdabd43', '0xf1359c61', '0xd1fb730d', '0xcbc3a34b']  match=True
+Threefry32x4::new(42) first block: ['0x9613ccb2', '0x3f0c4ebb', '0x4df6bffa', '0xe54e0d7c']
+   Random123 threefry4x32-20(ctr=0, key) : ['0x2f8a8341', '0xefec0830', '0xf67e8aca', '0x2730a055']  match=False
+   1.0.0 tweak+XOR variant               : ['0x9613ccb2', '0x3f0c4ebb', '0x4df6bffa', '0xe54e0d7c']  match=True
+Threefish256::new(0) first block == Threefish-256 E_k,t(ctr) : True; == E(ctr) XOR ctr : True
+   block 1 == E(ctr=1): False; == E(1) XOR 1: True
+Threefish256::new(1) first block == Threefish-256 E_k,t(ctr) : True; == E(ctr) XOR ctr : True
+   block 1 == E(ctr=1): False; == E(1) XOR 1: True

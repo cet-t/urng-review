@@ -1,0 +1,11 @@
+﻿randf edge: 160 cases, 0 outside [min,max)
+invalid float range
+  randf(1,1) -> panic
+invalid float range
+  randf(2,1) -> panic
+invalid float range
+  randf(NaN,1) -> panic
+  randf(0,inf) -> panic
+invalid float range
+invalid integer range
+  randi(5,4) -> panic

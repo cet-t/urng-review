@@ -1,0 +1,7 @@
+﻿randi[0,2] range=3: first-word rejections=1 (exact expectation 1) OK mapping/in-range ok=true buckets all == floor(2^32/range)=1431655765: true
+randi[-5,7] range=13: first-word rejections=9 (exact expectation 9) OK mapping/in-range ok=true buckets all == floor(2^32/range)=330382099: true
+randi[0,1073741824] range=1073741825: first-word rejections=1073741821 (exact expectation 1073741821) OK mapping/in-range ok=true
+randi[0,2147483647] range=2147483648: first-word rejections=0 (exact expectation 0) OK mapping/in-range ok=true
+randi[-1,2147483647] range=2147483649: first-word rejections=2147483647 (exact expectation 2147483647) OK mapping/in-range ok=true
+randi[-2147483648,2147483646] range=4294967295: first-word rejections=1 (exact expectation 1) OK mapping/in-range ok=true
+randi[-2147483648,2147483647] range=4294967296: first-word rejections=0 (exact expectation 0) OK mapping/in-range ok=true

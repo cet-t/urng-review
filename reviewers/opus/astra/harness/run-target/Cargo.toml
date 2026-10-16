@@ -16,6 +16,7 @@ v_astra = []
 [dependencies]
 urng = { path = "../_src", features = ["full"] }
 pastey = "0.2"
+rand_core = "0.10"
 
 [[bin]]
 name = "dump"
@@ -33,3 +34,19 @@ path = "../common/cabi.rs"
 [[bin]]
 name = "probe"
 path = "../common/probe.rs"
+
+[[bin]]
+name = "numeric"
+path = "../common/numeric.rs"
+
+
+[[bin]]
+name = "bench"
+path = "../common/bench.rs"
+
+# same codegen settings as urng's own [profile.release] (used for the shipped cdylib)
+[profile.lto]
+inherits = "release"
+lto = "fat"
+codegen-units = 1
+

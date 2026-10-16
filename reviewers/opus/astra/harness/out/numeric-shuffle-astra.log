@@ -1,0 +1,3 @@
+﻿shuffle n=5: 120/120 permutations seen, chi2=116.9 (df=119, 99.9% crit ~169)
+shuffled(): position of element 0 counts [99983, 99669, 100431, 100249, 99668] (expect ~100000 each)
+shuffle(empty) -> true

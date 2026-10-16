@@ -1,0 +1,23 @@
+﻿integer lane range exceeds i32: TryFromIntError(PosOverflow)
+randiv(scale=0x0, min=0) -> PANIC  | to_randi -> [-559038737, -559038737, -559038737, -559038737]
+randiv(scale=0x0, min=-2147483648) -> [1588444911, 1588444911, 1588444911, 1588444911]  | to_randi -> [1588444911, 1588444911, 1588444911, 1588444911]
+integer lane range exceeds i32: TryFromIntError(PosOverflow)
+randiv(scale=0xa, min=2147483645) -> PANIC  | to_randi -> [-2147483643, -2147483643, -2147483643, -2147483643]
+integer lane range exceeds i32: TryFromIntError(PosOverflow)
+randiv(scale=0x7, min=-3) -> [3, 3, 3, 3]  | to_randi -> [3, 3, 3, 3]
+randiv(scale=0xffffffff, min=0) -> PANIC  | to_randi -> [-559038738, -559038738, -559038738, -559038738]
+randfv(scale=1e0, min=0e0) word=0x0 -> 0e0 (upper bound min+scale=1e0, value<upper: true)
+randfv(scale=1e0, min=0e0) word=0xffffffff -> 9.999999e-1 (upper bound min+scale=1e0, value<upper: true)
+randfv(scale=1e0, min=1.6777216e7) word=0x0 -> 1.6777216e7 (upper bound min+scale=1.6777216e7, value<upper: false)
+randfv(scale=1e0, min=1.6777216e7) word=0xffffffff -> 1.6777216e7 (upper bound min+scale=1.6777216e7, value<upper: false)
+randfv(scale=0e0, min=0e0) word=0x0 -> 0e0 (upper bound min+scale=0e0, value<upper: false)
+randfv(scale=0e0, min=0e0) word=0xffffffff -> 0e0 (upper bound min+scale=0e0, value<upper: false)
+randfv(scale=-1e0, min=0e0) word=0x0 -> 0e0 (upper bound min+scale=-1e0, value<upper: false)
+randfv(scale=-1e0, min=0e0) word=0xffffffff -> -9.999999e-1 (upper bound min+scale=-1e0, value<upper: false)
+randfv(scale=inf, min=0e0) word=0x0 -> NaN (upper bound min+scale=inf, value<upper: false)
+randfv(scale=inf, min=0e0) word=0xffffffff -> inf (upper bound min+scale=inf, value<upper: false)
+randfv(scale=1e-30, min=1e0) word=0x0 -> 1e0 (upper bound min+scale=1e0, value<upper: false)
+randfv(scale=1e-30, min=1e0) word=0xffffffff -> 1e0 (upper bound min+scale=1e0, value<upper: false)
+RngW randi(full)=[-199631502, -1571320815, 1500680583, 1443961016, 253879909, -1109405876, 1033232514, -1822520729]
+ RngW randi(4,4)=[4, 4, 4, 4, 4, 4, 4, 4]
+ RngW randf(1,next_up(1))=[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
